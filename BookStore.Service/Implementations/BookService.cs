@@ -3,6 +3,8 @@ using BookStore.Domain.Entity;
 using BookStore.Domain.Response;
 using BookStore.Domain.Templates;
 using BookStore.Service.Interfaces;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
 
 namespace BookStore.Service.Implementations;
 
@@ -10,19 +12,21 @@ public class BookService : IBookService
 {
     private readonly IBookRepository _repository;
     private readonly IImageService _imageService;
+    private readonly ILogger<BookService> _logger;
 
-    public BookService(IBookRepository repository, IImageService imageService)
+    public BookService(IBookRepository repository, IImageService imageService, ILogger<BookService> logger)
     {
         _repository = repository;
         _imageService = imageService;
+        _logger = logger;
     }
 
 
-    public async Task<IBaseResponse<List<Book>>> ListService()
+    public async Task<IBaseResponse<List<Book>>> ListService(IHttpContextAccessor accessor)
     {
         try
         {
-            var books = await _repository.GetAll();
+            var books = await _repository.GetAll(accessor);
 
             return new BaseResponse<List<Book>>
             {
@@ -33,6 +37,11 @@ public class BookService : IBookService
         }
         catch (Exception e)
         {
+            _logger.LogError(
+                "{TraceIdentifier} - ListService(IHttpContextAccessor accessor) - ErrorMessage {Message}",
+                accessor.HttpContext?.TraceIdentifier,
+                e.Message
+            );
             return new BaseResponse<List<Book>>
             {
                 Success = false,
@@ -42,7 +51,7 @@ public class BookService : IBookService
         }
     }
 
-    public async Task<IBaseResponse<Book?>> CreateService(BookTemplate template)
+    public async Task<IBaseResponse<Book?>> CreateService(BookTemplate template, IHttpContextAccessor accessor)
     {
         try
         {
@@ -53,7 +62,7 @@ public class BookService : IBookService
                 if (imageResult.Item1 == 1) template.ImagePath = imageResult.Item2;
             }
 
-            var book = await _repository.Create(template);
+            var book = await _repository.Create(template, accessor);
 
             return new BaseResponse<Book?>
             {
@@ -64,6 +73,11 @@ public class BookService : IBookService
         }
         catch (Exception e)
         {
+            _logger.LogError(
+                "{TraceIdentifier} - CreateService(BookTemplate template, IHttpContextAccessor accessor) - ErrorMessage {Message}",
+                accessor.HttpContext?.TraceIdentifier,
+                e.Message
+            );
             return new BaseResponse<Book?>
             {
                 Success = false,
@@ -73,11 +87,11 @@ public class BookService : IBookService
         }
     }
 
-    public async Task<IBaseResponse<Book>> GetByIdService(long id)
+    public async Task<IBaseResponse<Book>> GetByIdService(long id, IHttpContextAccessor accessor)
     {
         try
         {
-            var book = await _repository.GetById(id);
+            var book = await _repository.GetById(id, accessor);
 
             if (book == null)
                 return new BaseResponse<Book>
@@ -96,6 +110,11 @@ public class BookService : IBookService
         }
         catch (Exception e)
         {
+            _logger.LogError(
+                "{TraceIdentifier} - GetByIdService(long id, IHttpContextAccessor accessor) - ErrorMessage {Message}",
+                accessor.HttpContext?.TraceIdentifier,
+                e.Message
+            );
             return new BaseResponse<Book>
             {
                 Success = false,
@@ -105,7 +124,8 @@ public class BookService : IBookService
         }
     }
 
-    public async Task<IBaseResponse<Book>> UpdateByIdService(long id, BookTemplate template)
+    public async Task<IBaseResponse<Book>> UpdateByIdService(long id, BookTemplate template,
+        IHttpContextAccessor accessor)
     {
         try
         {
@@ -116,7 +136,7 @@ public class BookService : IBookService
                 if (imageResult.Item1 == 1) template.ImagePath = imageResult.Item2;
             }
 
-            var book = await _repository.UpdateById(id, template);
+            var book = await _repository.UpdateById(id, template, accessor);
 
             if (book == null)
                 return new BaseResponse<Book>
@@ -135,6 +155,11 @@ public class BookService : IBookService
         }
         catch (Exception e)
         {
+            _logger.LogError(
+                "{TraceIdentifier} - UpdateByIdService(long id, BookTemplate template, IHttpContextAccessor accessor) - ErrorMessage {Message}",
+                accessor.HttpContext?.TraceIdentifier,
+                e.Message
+            );
             return new BaseResponse<Book>
             {
                 Success = false,
@@ -144,11 +169,11 @@ public class BookService : IBookService
         }
     }
 
-    public async Task<IBaseResponse<Book>> DeleteByIdService(long id)
+    public async Task<IBaseResponse<Book>> DeleteByIdService(long id, IHttpContextAccessor accessor)
     {
         try
         {
-            var isFoundBook = await _repository.DeleteById(id);
+            var isFoundBook = await _repository.DeleteById(id, accessor);
 
             if (!isFoundBook)
                 return new BaseResponse<Book>
@@ -167,6 +192,11 @@ public class BookService : IBookService
         }
         catch (Exception e)
         {
+            _logger.LogError(
+                "{TraceIdentifier} - DeleteByIdService(long id, IHttpContextAccessor accessor) - ErrorMessage {Message}",
+                accessor.HttpContext?.TraceIdentifier,
+                e.Message
+            );
             return new BaseResponse<Book>
             {
                 Success = false,

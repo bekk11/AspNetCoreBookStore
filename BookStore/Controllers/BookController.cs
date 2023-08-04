@@ -12,53 +12,132 @@ public class BookController : Controller
 {
     private readonly ILogger<BookController> _logger;
     private readonly IBookService _service;
+    private readonly IHttpContextAccessor _accessor;
 
-    public BookController(ILogger<BookController> logger, IBookService service)
+    public BookController(ILogger<BookController> logger, IBookService service, IHttpContextAccessor accessor)
     {
         _logger = logger;
         _service = service;
+        _accessor = accessor;
     }
 
     [HttpGet]
     [Route("list")]
     public async Task<IActionResult> GetAllBooksAsync()
     {
-        _logger.LogInformation("List Books");
-        var response = await _service.ListService();
-        return Ok(response);
+        try
+        {
+            return Ok(await _service.ListService(_accessor));
+        }
+        catch (Exception e)
+        {
+            _logger.LogError(
+                "{TraceIdentifier} - GetAllBooksAsync() - ErrorMessage {Message}",
+                _accessor.HttpContext?.TraceIdentifier,
+                e.Message
+            );
+            return Ok(new BaseResponse<Author>
+            {
+                Success = false,
+                Message = "Internal Server Error",
+                Data = null
+            });
+        }
     }
 
     [HttpPost]
     [Route("create")]
     public async Task<IActionResult> CreateBookAsync([FromForm] BookTemplate template)
     {
-        _logger.LogInformation("Create Books");
-        var response = await _service.CreateService(template);
-        return Ok(response);
+        try
+        {
+            return Ok(await _service.CreateService(template, _accessor));
+        }
+        catch (Exception e)
+        {
+            _logger.LogError(
+                "{TraceIdentifier} - CreateBookAsync([FromForm] BookTemplate template) - ErrorMessage {Message}",
+                _accessor.HttpContext?.TraceIdentifier,
+                e.Message
+            );
+            return Ok(new BaseResponse<Author>
+            {
+                Success = false,
+                Message = "Internal Server Error",
+                Data = null
+            });
+        }
     }
 
     [HttpGet]
     [Route("get/{id}")]
     public async Task<IActionResult> GetBookById(long id)
     {
-        _logger.LogInformation("Get Books");
-        var response = await _service.GetByIdService(id);
-        return Ok(response);
+        try
+        {
+            return Ok(await _service.GetByIdService(id, _accessor));
+        }
+        catch (Exception e)
+        {
+            _logger.LogError(
+                "{TraceIdentifier} - GetBookById(long id) - ErrorMessage {Message}",
+                _accessor.HttpContext?.TraceIdentifier,
+                e.Message
+            );
+            return Ok(new BaseResponse<Author>
+            {
+                Success = false,
+                Message = "Internal Server Error",
+                Data = null
+            });
+        }
     }
 
     [HttpPut]
     [Route("update/{id}")]
     public async Task<IActionResult> UpdateBookById(long id, [FromForm] BookTemplate template)
     {
-        var response = await _service.UpdateByIdService(id, template);
-        return Ok(response);
+        try
+        {
+            return Ok(await _service.UpdateByIdService(id, template, _accessor));
+        }
+        catch (Exception e)
+        {
+            _logger.LogError(
+                "{TraceIdentifier} - UpdateBookById(long id, [FromForm] BookTemplate template) - ErrorMessage {Message}",
+                _accessor.HttpContext?.TraceIdentifier,
+                e.Message
+            );
+            return Ok(new BaseResponse<Author>
+            {
+                Success = false,
+                Message = "Internal Server Error",
+                Data = null
+            });
+        }
     }
 
     [HttpDelete]
     [Route("delete/{id}")]
     public async Task<IActionResult> DeleteBookById(long id)
     {
-        var response = await _service.DeleteByIdService(id);
-        return Ok(response);
+        try
+        {
+            return Ok(await _service.DeleteByIdService(id, _accessor));
+        }
+        catch (Exception e)
+        {
+            _logger.LogError(
+                "{TraceIdentifier} - DeleteBookById(long id) - ErrorMessage {Message}",
+                _accessor.HttpContext?.TraceIdentifier,
+                e.Message
+            );
+            return Ok(new BaseResponse<Author>
+            {
+                Success = false,
+                Message = "Internal Server Error",
+                Data = null
+            });
+        }
     }
 }

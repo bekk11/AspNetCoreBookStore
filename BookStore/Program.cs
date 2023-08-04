@@ -1,7 +1,6 @@
 using BookStore.DAL;
 using BookStore.DAL.Interfaces;
 using BookStore.DAL.Repositories;
-using BookStore.Middlewares.Logging;
 using BookStore.Service.Implementations;
 using BookStore.Service.Interfaces;
 using Microsoft.EntityFrameworkCore;

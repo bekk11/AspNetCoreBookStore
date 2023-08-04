@@ -1,81 +1,100 @@
-﻿using System.Diagnostics;
-using Microsoft.IO;
-
-namespace BookStore.Middlewares.Logging;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Diagnostics;
+using System.IO;
+using System.Text;
+using System.Threading.Tasks;
 
 public class RequestResponseLoggingMiddleware
 {
     private readonly RequestDelegate _next;
     private readonly ILogger<RequestResponseLoggingMiddleware> _logger;
-    private readonly RecyclableMemoryStreamManager _recyclableMemoryStreamManager;
-    private Stopwatch _stopwatch = new Stopwatch();
-    
+
     public RequestResponseLoggingMiddleware(RequestDelegate next, ILogger<RequestResponseLoggingMiddleware> logger)
     {
         _next = next;
         _logger = logger;
-        _recyclableMemoryStreamManager = new RecyclableMemoryStreamManager();
     }
 
     public async Task Invoke(HttpContext context)
     {
-        _stopwatch.Start();
-        await LogRequest(context);
-        await _next(context);
-        await LogResponse(context);
-        _stopwatch.Stop();
-    }
-
-    private async Task LogRequest(HttpContext context)
-    {
-        await using var requestStream = _recyclableMemoryStreamManager.GetStream();
-        await context.Request.Body.CopyToAsync(requestStream);
-        
-        _logger.LogInformation(
-            "REQUEST INFO: {TraceIdentifier} - {Schema} - {Host} - {Url} - {ClientIP} - {QueryString} - {RequestBody}",
-            context.TraceIdentifier,
-            context.Request.Scheme,
-            context.Request.Host.Value,
-            context.Request.Path.Value,
-            context.Connection.RemoteIpAddress,
-            context.Request.QueryString.Value,
-            ReadStreamInChunks(requestStream).Replace("\r\n", "").Replace("\r", "").Replace("\n", "")
-        );
-    }
-    
-    private async Task LogResponse(HttpContext context)
-    {
-        await using var requestStream = _recyclableMemoryStreamManager.GetStream();
-        await context.Response.Body.CopyToAsync(requestStream);
-        
-        _logger.LogInformation(
-            "RESPONSE INFO: {TraceIdentifier} - {Schema} - {Path} - {QueryString} - {ResponseBody}",
-            context.TraceIdentifier,
-            context.Request.Scheme,
-            context.Request.Path.Value,
-            context.Request.QueryString.Value,
-            ReadStreamInChunks(requestStream).Replace("\r\n", "").Replace("\r", "").Replace("\n", "")
-        );
-    }
-    
-    private static string ReadStreamInChunks(Stream stream)
-    {
-        const int readChunkBufferLength = 4096;
-
-        stream.Seek(0, SeekOrigin.Begin);
-
-        using var textWriter = new StringWriter();
-        using var reader = new StreamReader(stream);
-
-        var readChunk = new char[readChunkBufferLength];
-        int readChunkLength;
-
-        do
+        if (!IsSwagger(context))
         {
-            readChunkLength = reader.ReadBlock(readChunk, 0, readChunkBufferLength);
-            textWriter.Write(readChunk, 0, readChunkLength);
-        } while (readChunkLength > 0);
+            string traceId = context.TraceIdentifier;
+            string schema = context.Request.Scheme;
+            string method = context.Request.Method;
+            string host = context.Request.Host.Value;
+            string queryString = context.Request.QueryString.ToString();
+            string? clientIp = context.Connection.RemoteIpAddress?.ToString();
+            string requestBody = await GetRequestBodyAsync(context.Request);
 
-        return textWriter.ToString();
+            _logger.LogInformation(
+                "REQUEST INFO:  [TraceId: {TraceId}] - Schema: {Schema} - Method: {Method} - Host: {Host} - Path: {RequestPath} - QueryString: {QueryString} - Client IP: {CLientIp} - RequestBody: {RequestBody}",
+                traceId, schema, method, host, context.Request.Path, queryString, clientIp,
+                requestBody.Replace("\r\n", "").Replace("\r", "").Replace("\n", "").Replace("  ", " "));
+
+            // Copy the response stream to capture the response body
+            var originalBodyStream = context.Response.Body;
+            using (var responseBody = new MemoryStream())
+            {
+                context.Response.Body = responseBody;
+
+                Stopwatch stopwatch = Stopwatch.StartNew();
+                await _next(context);
+                stopwatch.Stop();
+
+                // Capture the response body
+                string responseBodyString = await GetResponseBodyAsync(context.Response);
+
+                // Log response information
+                string statusCode = context.Response.StatusCode.ToString();
+                _logger.LogInformation(
+                    "RESPONSE INFO: [TraceId: {TraceId}] - Status: {StatusCode} - SpentTime: {elapsedTime}ms - Response Body: {ResponseBodyString}",
+                    traceId, statusCode, stopwatch.ElapsedMilliseconds.ToString(), responseBodyString);
+
+                // Copy the response body to the original stream for client consumption
+                await responseBody.CopyToAsync(originalBodyStream);
+            }
+        }
+        else
+        {
+            await _next(context);
+        }
+    }
+
+    private bool IsSwagger(HttpContext context)
+    {
+        return context.Request.Path.ToString().ToLower().Contains("/swagger-ui") ||
+               context.Request.Path.ToString().ToLower().Contains("/swagger") ||
+               context.Request.Path.ToString().ToLower().Contains("/favicon") ||
+               context.Request.Path.ToString().ToLower().Contains("/index.html") ||
+               context.Request.Path.ToString().ToLower().Contains("/index.html") ||
+               context.Request.Path.ToString().ToLower().Contains("/api/bank/list") ||
+               context.Request.Path.ToString().ToLower().Contains("/api/Filials/list");
+    }
+
+    private async Task<string> GetRequestBodyAsync(HttpRequest request)
+    {
+        request.EnableBuffering();
+
+        using (StreamReader reader = new StreamReader(request.Body, Encoding.UTF8,
+                   detectEncodingFromByteOrderMarks: true, leaveOpen: true))
+        {
+            string requestBody = await reader.ReadToEndAsync();
+            request.Body.Position = 0; // Reset the request body position for further processing.
+            return requestBody;
+        }
+    }
+
+    private async Task<string> GetResponseBodyAsync(HttpResponse response)
+    {
+        response.Body.Seek(0, SeekOrigin.Begin);
+
+        string responseBody =
+            await new StreamReader(response.Body, Encoding.UTF8, detectEncodingFromByteOrderMarks: true)
+                .ReadToEndAsync();
+        response.Body.Seek(0, SeekOrigin.Begin); // Reset the response body position for further processing.
+        return responseBody;
     }
 }

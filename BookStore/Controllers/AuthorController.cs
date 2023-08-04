@@ -27,9 +27,8 @@ public class AuthorController : Controller
     {
         try
         {
-            throw new Exception();
-            var response = await _service.ListService(_accessor);
-            return Ok(response);
+            // return Ok("ok");
+            return Ok(await _service.ListService(_accessor));
         }
         catch (Exception e)
         {
@@ -53,8 +52,7 @@ public class AuthorController : Controller
     {
         try
         {
-            var response = await _service.CreateService(template, _accessor);
-            return Ok(response);
+            return Ok(await _service.CreateService(template, _accessor));
         }
         catch (Exception e)
         {
@@ -78,8 +76,7 @@ public class AuthorController : Controller
     {
         try
         {
-            var response = await _service.GetByIdService(id, _accessor);
-            return Ok(response);
+            return Ok(await _service.GetByIdService(id, _accessor));
         }
         catch (Exception e)
         {
@@ -103,8 +100,7 @@ public class AuthorController : Controller
     {
         try
         {
-            var response = await _service.UpdateByIdService(id, template, _accessor);
-            return Ok(response);
+            return Ok(await _service.UpdateByIdService(id, template, _accessor));
         }
         catch (Exception e)
         {
@@ -128,8 +124,7 @@ public class AuthorController : Controller
     {
         try
         {
-            var response = await _service.DeleteByIdService(id, _accessor);
-            return Ok(response);
+            return Ok(await _service.DeleteByIdService(id, _accessor));
         }
         catch (Exception e)
         {
