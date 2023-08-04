@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "P:\\C#\\BookStore\\BookStore\\wwwroot\\uploads\\images\\1030b299-a882-4b79-8cf1-c44b419e1f3d.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\1030b299-a882-4b79-8cf1-c44b419e1f3d.jpg"
+    },
+    {
+      "Id": "P:\\C#\\BookStore\\BookStore\\wwwroot\\uploads\\images\\17045a91-d619-4917-95f4-92bedf2456cc.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\17045a91-d619-4917-95f4-92bedf2456cc.jpg"
+    },
+    {
+      "Id": "P:\\C#\\BookStore\\BookStore\\wwwroot\\uploads\\images\\2177e58b-c547-4669-88e1-76bf91344167.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\2177e58b-c547-4669-88e1-76bf91344167.jpg"
+    },
+    {
+      "Id": "P:\\C#\\BookStore\\BookStore\\wwwroot\\uploads\\images\\54897dbb-bb13-4250-b708-4a898683fb75.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\54897dbb-bb13-4250-b708-4a898683fb75.jpg"
+    },
+    {
+      "Id": "P:\\C#\\BookStore\\BookStore\\wwwroot\\uploads\\images\\66e6261f-0948-4323-b992-62bd016509f0.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\66e6261f-0948-4323-b992-62bd016509f0.jpg"
+    },
+    {
+      "Id": "P:\\C#\\BookStore\\BookStore\\wwwroot\\uploads\\images\\67dbee6b-1b22-4ee8-9ff5-a482250e8cf9.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\67dbee6b-1b22-4ee8-9ff5-a482250e8cf9.jpg"
+    },
+    {
+      "Id": "P:\\C#\\BookStore\\BookStore\\wwwroot\\uploads\\images\\baaa4049-08ea-433f-84ec-d2c7b4f05b61.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\baaa4049-08ea-433f-84ec-d2c7b4f05b61.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.BookStore.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.BookStore.props",
+      "PackagePath": "build\\BookStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.BookStore.props",
+      "PackagePath": "buildMultiTargeting\\BookStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.BookStore.props",
+      "PackagePath": "buildTransitive\\BookStore.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

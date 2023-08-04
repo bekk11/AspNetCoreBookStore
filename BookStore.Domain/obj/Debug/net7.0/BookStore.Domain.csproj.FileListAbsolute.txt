@@ -1,0 +1,14 @@
+P:\C#\BookStore\BookStore.Domain\bin\Debug\net7.0\BookStore.Domain.deps.json
+P:\C#\BookStore\BookStore.Domain\bin\Debug\net7.0\BookStore.Domain.dll
+P:\C#\BookStore\BookStore.Domain\bin\Debug\net7.0\BookStore.Domain.pdb
+P:\C#\BookStore\BookStore.Domain\obj\Debug\net7.0\BookStore.Domain.csproj.AssemblyReference.cache
+P:\C#\BookStore\BookStore.Domain\obj\Debug\net7.0\BookStore.Domain.GeneratedMSBuildEditorConfig.editorconfig
+P:\C#\BookStore\BookStore.Domain\obj\Debug\net7.0\BookStore.Domain.AssemblyInfoInputs.cache
+P:\C#\BookStore\BookStore.Domain\obj\Debug\net7.0\BookStore.Domain.AssemblyInfo.cs
+P:\C#\BookStore\BookStore.Domain\obj\Debug\net7.0\BookStore.Domain.csproj.CoreCompileInputs.cache
+P:\C#\BookStore\BookStore.Domain\obj\Debug\net7.0\BookStore.Domain.dll
+P:\C#\BookStore\BookStore.Domain\obj\Debug\net7.0\refint\BookStore.Domain.dll
+P:\C#\BookStore\BookStore.Domain\obj\Debug\net7.0\BookStore.Domain.pdb
+P:\C#\BookStore\BookStore.Domain\obj\Debug\net7.0\ref\BookStore.Domain.dll
+P:\C#\BookStore\BookStore.Domain\bin\Debug\net7.0\BookStore.Domain.runtimeconfig.json
+P:\C#\BookStore\BookStore.Domain\obj\Debug\net7.0\BookStore.Domain.genruntimeconfig.cache

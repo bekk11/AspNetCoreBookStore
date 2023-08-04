@@ -1,0 +1,17 @@
+P:\C#\BookStore\BookStore.Service\bin\Debug\net7.0\BookStore.Service.deps.json
+P:\C#\BookStore\BookStore.Service\bin\Debug\net7.0\BookStore.Service.dll
+P:\C#\BookStore\BookStore.Service\bin\Debug\net7.0\BookStore.Service.pdb
+P:\C#\BookStore\BookStore.Service\bin\Debug\net7.0\BookStore.DAL.dll
+P:\C#\BookStore\BookStore.Service\bin\Debug\net7.0\BookStore.Domain.dll
+P:\C#\BookStore\BookStore.Service\bin\Debug\net7.0\BookStore.DAL.pdb
+P:\C#\BookStore\BookStore.Service\bin\Debug\net7.0\BookStore.Domain.pdb
+P:\C#\BookStore\BookStore.Service\obj\Debug\net7.0\BookStore.Service.csproj.AssemblyReference.cache
+P:\C#\BookStore\BookStore.Service\obj\Debug\net7.0\BookStore.Service.GeneratedMSBuildEditorConfig.editorconfig
+P:\C#\BookStore\BookStore.Service\obj\Debug\net7.0\BookStore.Service.AssemblyInfoInputs.cache
+P:\C#\BookStore\BookStore.Service\obj\Debug\net7.0\BookStore.Service.AssemblyInfo.cs
+P:\C#\BookStore\BookStore.Service\obj\Debug\net7.0\BookStore.Service.csproj.CoreCompileInputs.cache
+P:\C#\BookStore\BookStore.Service\obj\Debug\net7.0\BookStore.Service.csproj.CopyComplete
+P:\C#\BookStore\BookStore.Service\obj\Debug\net7.0\BookStore.Service.dll
+P:\C#\BookStore\BookStore.Service\obj\Debug\net7.0\refint\BookStore.Service.dll
+P:\C#\BookStore\BookStore.Service\obj\Debug\net7.0\BookStore.Service.pdb
+P:\C#\BookStore\BookStore.Service\obj\Debug\net7.0\ref\BookStore.Service.dll

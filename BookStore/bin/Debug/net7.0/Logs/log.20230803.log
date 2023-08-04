@@ -1,0 +1,27 @@
+2023-08-03 11:10:50,479 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-03 11:10:50,490 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-03 11:10:50,490 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-03 11:10:50,490 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-03 11:10:51,010 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5049/swagger/index.html - -
+2023-08-03 11:10:51,171 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5049/swagger/index.html - - - 200 - text/html;charset=utf-8 166.1868ms
+2023-08-03 11:10:51,313 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5049/swagger/v1/swagger.json - -
+2023-08-03 11:10:51,454 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5049/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 141.6725ms
+2023-08-03 11:11:03,310 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5049/book/list - -
+2023-08-03 11:11:03,319 [.NET ThreadPool Worker] WARN  Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware - Failed to determine the https port for redirect.
+2023-08-03 11:11:03,325 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'BookStore.Controllers.BookController.GetAllBooksAsync (BookStore)'
+2023-08-03 11:11:03,343 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAllBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBooksAsync() on controller BookStore.Controllers.BookController (BookStore).
+2023-08-03 11:11:03,640 [.NET ThreadPool Worker] INFO  BookStore.Controllers.BookController - List Books
+2023-08-03 11:11:05,288 [.NET ThreadPool Worker] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (40ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT b."Id", b."AuthorId", b."CreatedAt", b."Description", b."ImagePath", b."Title", t."BooksId", t."GenresId", t."Id", t."Name"
+FROM "Books" AS b
+LEFT JOIN (
+    SELECT b0."BooksId", b0."GenresId", g."Id", g."Name"
+    FROM "BookGenre" AS b0
+    INNER JOIN "Genres" AS g ON b0."GenresId" = g."Id"
+) AS t ON b."Id" = t."BooksId"
+ORDER BY b."Id", t."BooksId", t."GenresId"
+2023-08-03 11:11:05,461 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor - Executing OkObjectResult, writing value of type 'BookStore.Domain.Response.BaseResponse`1[[System.Collections.Generic.List`1[[BookStore.Domain.Entity.Book, BookStore.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-08-03 11:11:05,494 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker - Executed action BookStore.Controllers.BookController.GetAllBooksAsync (BookStore) in 2145.7353ms
+2023-08-03 11:11:05,494 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'BookStore.Controllers.BookController.GetAllBooksAsync (BookStore)'
+2023-08-03 11:11:05,507 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET http://localhost:5049/book/list - - - 200 - application/json;+charset=utf-8 2197.0123ms
+2023-08-03 11:12:40,888 [16] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
