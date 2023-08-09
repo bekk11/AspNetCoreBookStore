@@ -19,7 +19,7 @@ builder.Services.AddDbContext<BookStoreDbContext>(
 );
 
 builder.Services.AddScoped<IAuthorRepository, AuthorRepository>();
-builder.Services.AddScoped<IGenreRepository, GenreRepository>();
+builder.Services.AddScoped<IGenreRepository, GenresRepository>();
 builder.Services.AddScoped<IBookRepository, BookRepository>();
 
 builder.Services.AddScoped<IAuthorService, AuthorService>();

@@ -1,0 +1,90 @@
+2023-08-09 09:31:18,357 [9] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2023-08-09 09:31:56,921 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-09 09:31:56,935 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-09 09:31:56,936 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-09 09:31:56,936 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-09 09:32:07,639 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSOI68FR8Q3:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /genre/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-09 09:35:37,642 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-09 09:35:37,662 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-09 09:35:37,664 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-09 09:35:37,664 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-09 09:35:45,215 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSOI8A57480:00000003] - Schema: http - Method: GET - Host: localhost:5049 - Path: /genre/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-09 09:37:49,331 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-09 09:37:49,341 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-09 09:37:49,341 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-09 09:37:49,341 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-09 09:37:55,075 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSOI9HG6L8E:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /genre/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-09 09:38:50,125 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-09 09:38:50,135 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-09 09:38:50,136 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-09 09:38:50,136 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-09 09:38:59,316 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSOIA3H5O6Q:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /genre/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-09 09:39:01,180 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSOIA3H5O6Q:00000001] - Status: 200 - SpentTime: 1855ms - Response Body: {"success":true,"message":"SUCCESS","data":[{"id":1,"name":"ewrerw"},{"id":2,"name":"rwerwerwe"},{"id":4,"name":"65h56h56"},{"id":5,"name":"iuyjhtbg"}]}
+2023-08-09 09:39:47,706 [3] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2023-08-09 09:41:48,832 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-09 09:41:48,840 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-09 09:41:48,841 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-09 09:41:48,841 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-09 09:41:56,074 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSOIBOTQV6U:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /book/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-09 09:41:57,733 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSOIBOTQV6U:00000001] - Status: 200 - SpentTime: 1657ms - Response Body: {"success":true,"message":"SUCCESS","data":[{"id":10,"title":"safsdag","description":"rgegreger","createdAt":"2023-08-08T11:01:52.035008Z","imagePath":"82b507fe-6047-43a2-8def-9d8a2aa3af18.jpg","authorId":6,"genres":null},{"id":13,"title":"safsdagtbrggf","description":"rgegregeryhtrgghf","createdAt":"2023-08-08T11:04:17.999716Z","imagePath":"60175ea0-fbfa-4ae9-bce9-dc767696e234.jpg","authorId":7,"genres":null},{"id":14,"title":"ertyuik","description":"5yr6ut7io","createdAt":"2023-08-08T17:36:09.398693Z","imagePath":"a57ad4ea-e5c6-45f4-b9a0-3ceb2790704f.jpg","authorId":10,"genres":null},{"id":15,"title":"ertyuikrbvfde","description":"lllkkk","createdAt":"2023-08-08T17:42:18.399915Z","imagePath":"5eb8e372-5e55-4ef8-9427-a436d99d96fe.jpg","authorId":10,"genres":null},{"id":16,"title":"ertyuikrbvfdef","description":"lllkkkf","createdAt":"2023-08-08T17:43:43.13185Z","imagePath":"88bf00a5-bc5f-427a-b69e-ab6c06145fb5.jpg","authorId":10,"genres":null},{"id":17,"title":"ertyuikrbvfdeff","description":"lllkkkff","createdAt":"2023-08-08T17:44:30.414051Z","imagePath":"dbc1dcfc-47dc-4433-be35-d9e1fded876a.jpg","authorId":10,"genres":null}]}
+2023-08-09 09:42:13,564 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSOIBOTQV6V:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /book/get/17 - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-09 09:42:13,873 [.NET ThreadPool Worker] WARN  Microsoft.EntityFrameworkCore.Query - The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2023-08-09 09:42:13,970 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSOIBOTQV6V:00000001] - Status: 200 - SpentTime: 406ms - Response Body: {"success":true,"message":"SUCCESS","data":{"id":17,"title":"ertyuikrbvfdeff","description":"lllkkkff","createdAt":"2023-08-08T17:44:30.414051Z","imagePath":"dbc1dcfc-47dc-4433-be35-d9e1fded876a.jpg","authorId":10,"genres":null}}
+2023-08-09 10:31:13,856 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-09 10:31:13,862 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-09 10:31:13,862 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-09 10:31:13,862 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-09 10:31:19,705 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSOJ7CGDTC6:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /genre/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-09 10:31:21,371 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSOJ7CGDTC6:00000001] - Status: 200 - SpentTime: 1665ms - Response Body: {"success":true,"message":"SUCCESS","data":[{"id":1,"name":"ewrerw"},{"id":2,"name":"rwerwerwe"},{"id":4,"name":"65h56h56"},{"id":5,"name":"iuyjhtbg"}]}
+2023-08-09 10:31:32,319 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSOJ7CGDTC7:00000001] - Schema: http - Method: POST - Host: localhost:5049 - Path: /genre/create - QueryString:  - Client IP: ::1 - RequestBody: { "name": "new"}
+2023-08-09 10:31:32,391 [.NET ThreadPool Worker] ERROR BookStore.DAL.Repositories.GenresRepository - 0HMSOJ7CGDTC7:00000001 - GetAll(IHttpContextAccessor accessor) - ErrorMessage 42804: column "id" is of type bigint but expression is of type text
+
+POSITION: 33
+2023-08-09 10:31:32,392 [.NET ThreadPool Worker] ERROR BookStore.Service.Implementations.GenreService - 0HMSOJ7CGDTC7:00000001 - CreateService(GenreTemplate template, IHttpContextAccessor accessor) - ErrorMessage 42804: column "id" is of type bigint but expression is of type text
+
+POSITION: 33
+2023-08-09 10:31:32,393 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSOJ7CGDTC7:00000001] - Status: 200 - SpentTime: 73ms - Response Body: {"success":false,"message":"42804: column \"id\" is of type bigint but expression is of type text\r\n\r\nPOSITION: 33","data":null}
+2023-08-09 10:33:49,708 [3] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2023-08-09 10:33:52,312 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-09 10:33:52,318 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-09 10:33:52,318 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-09 10:33:52,319 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-09 10:33:56,136 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSOJ8RMJDBD:00000001] - Schema: http - Method: POST - Host: localhost:5049 - Path: /genre/create - QueryString:  - Client IP: ::1 - RequestBody: { "name": "new"}
+2023-08-09 10:33:56,990 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSOJ8RMJDBD:00000001] - Status: 200 - SpentTime: 852ms - Response Body: {"success":true,"message":"GENRE CREATED SUCCESSFULLY","data":null}
+2023-08-09 10:34:05,958 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSOJ8RMJDBE:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /genre/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-09 10:34:06,146 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSOJ8RMJDBE:00000001] - Status: 200 - SpentTime: 187ms - Response Body: {"success":true,"message":"SUCCESS","data":[{"id":1,"name":"ewrerw"},{"id":2,"name":"rwerwerwe"},{"id":4,"name":"65h56h56"},{"id":5,"name":"iuyjhtbg"},{"id":6,"name":"new"}]}
+2023-08-09 10:34:21,812 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSOJ8RMJDBF:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /genre/get/6 - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-09 10:34:21,932 [.NET ThreadPool Worker] WARN  Microsoft.EntityFrameworkCore.Query - The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2023-08-09 10:34:21,952 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSOJ8RMJDBF:00000001] - Status: 200 - SpentTime: 140ms - Response Body: {"success":true,"message":"SUCCESS","data":{"id":6,"name":"new"}}
+2023-08-09 10:34:39,595 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSOJ8RMJDBG:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /genre/get/6 - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-09 10:34:39,601 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSOJ8RMJDBG:00000001] - Status: 200 - SpentTime: 5ms - Response Body: {"success":true,"message":"SUCCESS","data":{"id":6,"name":"new"}}
+2023-08-09 10:35:00,188 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSOJ8RMJDBH:00000001] - Schema: http - Method: PUT - Host: localhost:5049 - Path: /genre/update/6 - QueryString:  - Client IP: ::1 - RequestBody: { "name": "Bekkiiiiiii"}
+2023-08-09 10:35:00,245 [.NET ThreadPool Worker] ERROR BookStore.DAL.Repositories.GenresRepository - 0HMSOJ8RMJDBH:00000001 - GetAll(IHttpContextAccessor accessor) - ErrorMessage 23505: duplicate key value violates unique constraint "IX_genre_name"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2023-08-09 10:35:00,245 [.NET ThreadPool Worker] ERROR BookStore.Service.Implementations.GenreService - 0HMSOJ8RMJDBH:00000001 - UpdateByIdService(long id, GenreTemplate template, IHttpContextAccessor accessor) - ErrorMessage 23505: duplicate key value violates unique constraint "IX_genre_name"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2023-08-09 10:35:00,246 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSOJ8RMJDBH:00000001] - Status: 200 - SpentTime: 58ms - Response Body: {"success":false,"message":"23505: duplicate key value violates unique constraint \"IX_genre_name\"\r\n\r\nDETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.","data":null}
+2023-08-09 10:35:18,023 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSOJ8RMJDBI:00000001] - Schema: http - Method: PUT - Host: localhost:5049 - Path: /genre/update/6 - QueryString:  - Client IP: ::1 - RequestBody: { "name": "Bekkiiiiiiisafasljkhfjlkdfjdbhsjsdn"}
+2023-08-09 10:35:18,031 [.NET ThreadPool Worker] ERROR BookStore.DAL.Repositories.GenresRepository - 0HMSOJ8RMJDBI:00000001 - GetAll(IHttpContextAccessor accessor) - ErrorMessage 23505: duplicate key value violates unique constraint "IX_genre_name"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2023-08-09 10:35:18,031 [.NET ThreadPool Worker] ERROR BookStore.Service.Implementations.GenreService - 0HMSOJ8RMJDBI:00000001 - UpdateByIdService(long id, GenreTemplate template, IHttpContextAccessor accessor) - ErrorMessage 23505: duplicate key value violates unique constraint "IX_genre_name"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+2023-08-09 10:35:18,031 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSOJ8RMJDBI:00000001] - Status: 200 - SpentTime: 8ms - Response Body: {"success":false,"message":"23505: duplicate key value violates unique constraint \"IX_genre_name\"\r\n\r\nDETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.","data":null}
+2023-08-09 10:36:26,337 [14] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2023-08-09 10:36:28,790 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-09 10:36:28,795 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-09 10:36:28,796 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-09 10:36:28,796 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-09 10:36:38,681 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSOJAAB75LK:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /genre/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-09 10:36:39,680 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSOJAAB75LK:00000001] - Status: 200 - SpentTime: 997ms - Response Body: {"success":true,"message":"SUCCESS","data":[{"id":1,"name":"ewrerw"},{"id":2,"name":"rwerwerwe"},{"id":4,"name":"65h56h56"},{"id":5,"name":"iuyjhtbg"},{"id":6,"name":"new"}]}
+2023-08-09 10:36:50,193 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSOJAAB75LL:00000001] - Schema: http - Method: PUT - Host: localhost:5049 - Path: /genre/update/6 - QueryString:  - Client IP: ::1 - RequestBody: { "name": "Bekkkiiiiii"}
+2023-08-09 10:36:50,254 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSOJAAB75LL:00000001] - Status: 200 - SpentTime: 60ms - Response Body: {"success":true,"message":"GENRE UPDATED SUCCESSFULLY","data":null}
+2023-08-09 10:37:01,274 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSOJAAB75LM:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /genre/get/6 - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-09 10:37:01,353 [.NET ThreadPool Worker] WARN  Microsoft.EntityFrameworkCore.Query - The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2023-08-09 10:37:01,370 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSOJAAB75LM:00000001] - Status: 200 - SpentTime: 95ms - Response Body: {"success":true,"message":"SUCCESS","data":{"id":6,"name":"Bekkkiiiiii"}}
+2023-08-09 10:37:08,320 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSOJAAB75LN:00000001] - Schema: http - Method: DELETE - Host: localhost:5049 - Path: /genre/delete/6 - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-09 10:37:08,650 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSOJAAB75LN:00000001] - Status: 200 - SpentTime: 330ms - Response Body: {"success":true,"message":"GENRE DELETED SUCCESSFULLY","data":null}

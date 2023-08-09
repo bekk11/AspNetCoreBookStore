@@ -62,13 +62,13 @@ public class BookService : IBookService
                 if (imageResult.Item1 == 1) template.ImagePath = imageResult.Item2;
             }
 
-            var book = await _repository.Create(template, accessor);
+            await _repository.Create(template, accessor);
 
             return new BaseResponse<Book?>
             {
                 Success = true,
                 Message = "BOOK CREATED SUCCESSFULLY",
-                Data = book
+                Data = null
             };
         }
         catch (Exception e)
@@ -136,21 +136,13 @@ public class BookService : IBookService
                 if (imageResult.Item1 == 1) template.ImagePath = imageResult.Item2;
             }
 
-            var book = await _repository.UpdateById(id, template, accessor);
-
-            if (book == null)
-                return new BaseResponse<Book>
-                {
-                    Success = false,
-                    Message = "BOOK WITH THIS ID NOT FOUND",
-                    Data = null
-                };
-
+            await _repository.UpdateById(id, template, accessor);
+            
             return new BaseResponse<Book>
             {
                 Success = true,
                 Message = "SUCCESS",
-                Data = book
+                Data = null
             };
         }
         catch (Exception e)

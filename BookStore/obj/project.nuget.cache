@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kVxK1OVCD1MuEXQvq/HMYnXE4zEVIvt32Ayi+0lvTYoFUEPaqRmhrpuBm/VWpgCPUtx4WLBV2i3RDH0BHjIbPQ==",
+  "dgSpecHash": "FBy+HUQSgzT7VDyKBZi7QgtCC7533vkmKgLcG3ZbH7iOLUEX20v4bhn7RDr4sbKeRk1BQQbJ2t31tIVuRNzpyg==",
   "success": true,
   "projectFilePath": "P:\\C#\\BookStore\\BookStore\\BookStore.csproj",
   "expectedPackageFiles": [
@@ -32,7 +32,7 @@
     "C:\\Users\\Bekzod\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
     "C:\\Users\\Bekzod\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\Bekzod\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\Bekzod\\.nuget\\packages\\npgsql\\7.0.2\\npgsql.7.0.2.nupkg.sha512",
+    "C:\\Users\\Bekzod\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
     "C:\\Users\\Bekzod\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.3\\npgsql.entityframeworkcore.postgresql.7.0.3.nupkg.sha512",
     "C:\\Users\\Bekzod\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\Bekzod\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",

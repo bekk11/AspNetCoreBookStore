@@ -4,6 +4,7 @@ using BookStore.Domain.Templates;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using Npgsql;
 
 namespace BookStore.DAL.Repositories;
 
@@ -23,7 +24,8 @@ public class AuthorRepository : IAuthorRepository
     {
         try
         {
-            return _dbContext.Authors.ToList();
+            return await _dbContext.Authors.FromSql($"SELECT * FROM public.author").ToListAsync();
+            // return await _dbContext.Authors.FromSql($"CALL author_list").ToListAsync();
         }
         catch (Exception e)
         {
@@ -36,22 +38,20 @@ public class AuthorRepository : IAuthorRepository
         }
     }
 
-    // Creates new Author in DB ---------------------------------------------------------------
-    public async Task<Author> Create(AuthorTemplate template, IHttpContextAccessor accessor)
+// Creates new Author in DB ---------------------------------------------------------------
+    public async Task Create(AuthorTemplate template, IHttpContextAccessor accessor)
     {
         try
         {
-            var author = new Author
+            int result = await _dbContext.Database.ExecuteSqlAsync(
+                $"INSERT INTO public.author(firstname, lastname, age) VALUES ({template.Firstname}, {template.Lastname}, {template.Age})");
+
+            if (result > 0)
             {
-                Firstname = template.Firstname,
-                Lastname = template.Lastname,
-                Age = template.Age
-            };
+                return;
+            }
 
-            await _dbContext.Authors.AddAsync(author);
-            await _dbContext.SaveChangesAsync();
-
-            return author;
+            throw new Exception("Something went wrong while inserting data to db");
         }
         catch (Exception e)
         {
@@ -64,12 +64,13 @@ public class AuthorRepository : IAuthorRepository
         }
     }
 
-    // Gets Author By Id ---------------------------------------------------------------
+// Gets Author By Id ---------------------------------------------------------------
     public async Task<Author?> GetById(long id, IHttpContextAccessor accessor)
     {
         try
         {
-            return await _dbContext.Authors.FirstOrDefaultAsync(author => author.Id == id);
+            // return await _dbContext.Authors.FirstOrDefaultAsync(author => author.Id == id);
+            return _dbContext.Authors.FromSql($"SELECT * FROM public.author where id = {id}").FirstOrDefault();
         }
         catch (Exception e)
         {
@@ -82,22 +83,20 @@ public class AuthorRepository : IAuthorRepository
         }
     }
 
-    // Updates Author By Id ---------------------------------------------------------------
-    public async Task<Author?> UpdateById(long id, AuthorTemplate template, IHttpContextAccessor accessor)
+// Updates Author By Id ---------------------------------------------------------------
+    public async Task UpdateById(long id, AuthorTemplate template, IHttpContextAccessor accessor)
     {
         try
         {
-            var author = await _dbContext.Authors.FirstOrDefaultAsync(author => author.Id == id);
+            int result = await _dbContext.Database.ExecuteSqlAsync(
+                $"UPDATE public.author SET firstname = {template.Firstname}, lastname = {template.Lastname}, age = {template.Age} WHERE id ={id}");
 
-            if (author == null) return null;
+            if (result > 0)
+            {
+                return;
+            }
 
-            author.Firstname = template.Firstname;
-            author.Lastname = template.Lastname;
-            author.Age = template.Age;
-
-            await _dbContext.SaveChangesAsync();
-
-            return author;
+            throw new Exception("Something went wrong while updating row");
         }
         catch (Exception e)
         {
@@ -110,19 +109,16 @@ public class AuthorRepository : IAuthorRepository
         }
     }
 
-    // Deletes Author by id ---------------------------------------------------------------
+// Deletes Author by id ---------------------------------------------------------------
     public async Task<bool> DeleteById(long id, IHttpContextAccessor accessor)
     {
         try
         {
-            var author = await _dbContext.Authors.FirstOrDefaultAsync(author => author.Id == id);
+            int res = await _dbContext.Database.ExecuteSqlAsync($"DELETE FROM public.author WHERE id = {id}");
 
-            if (author == null) return false;
+            if (res > 0) return true;
 
-            _dbContext.Remove(author);
-            await _dbContext.SaveChangesAsync();
-
-            return true;
+            return false;
         }
         catch (Exception e)
         {
@@ -133,6 +129,5 @@ public class AuthorRepository : IAuthorRepository
             );
             throw;
         }
-        
     }
 }

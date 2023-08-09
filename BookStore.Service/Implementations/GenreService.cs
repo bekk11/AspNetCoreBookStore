@@ -52,13 +52,12 @@ public class GenreService : IGenreService
     {
         try
         {
-            var genre = await _repository.Create(template, accessor);
+            await _repository.Create(template, accessor);
 
             return new BaseResponse<Genre>
             {
                 Success = true,
-                Message = "GENRE CREATED SUCCESSFULLY",
-                Data = genre
+                Message = "GENRE CREATED SUCCESSFULLY"
             };
         }
         catch (Exception e)
@@ -118,21 +117,12 @@ public class GenreService : IGenreService
     {
         try
         {
-            var genre = await _repository.UpdateById(id, template, accessor);
-
-            if (genre == null)
-                return new BaseResponse<Genre>
-                {
-                    Success = false,
-                    Message = "GENRE WITH THIS ID NOT FOUND",
-                    Data = null
-                };
+            await _repository.UpdateById(id, template, accessor);
 
             return new BaseResponse<Genre>
             {
                 Success = true,
-                Message = "GENRE UPDATED SUCCESSFULLY",
-                Data = genre
+                Message = "GENRE UPDATED SUCCESSFULLY"
             };
         }
         catch (Exception e)

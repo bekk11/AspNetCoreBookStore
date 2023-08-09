@@ -56,12 +56,12 @@ public class AuthorService : IAuthorService
     {
         try
         {
-            var author = await _repository.Create(template, accessor);
+            await _repository.Create(template, accessor);
             return new BaseResponse<Author>
             {
                 Success = true,
                 Message = "AUTHOR SUCCESSFULLY CREATED",
-                Data = author
+                Data = null
             };
         }
         catch (Exception e)
@@ -123,21 +123,13 @@ public class AuthorService : IAuthorService
     {
         try
         {
-            var author = await _repository.UpdateById(id, template, accessor);
-
-            if (author == null)
-                return new BaseResponse<Author>
-                {
-                    Success = false,
-                    Message = "AUTHOR WITH THIS ID NOT FOUND",
-                    Data = null
-                };
+            await _repository.UpdateById(id, template, accessor);
 
             return new BaseResponse<Author>
             {
                 Success = true,
                 Message = "AUTHOR UPDATED SUCCESSFULLY",
-                Data = author
+                Data = null
             };
         }
         catch (Exception e)

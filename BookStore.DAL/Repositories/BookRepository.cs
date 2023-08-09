@@ -23,7 +23,7 @@ public class BookRepository : IBookRepository
     {
         try
         {
-            return _dbContext.Books.Include(x => x.Genres).ToList();
+            return await _dbContext.Books.FromSql($"SELECT * FROM public.book").ToListAsync();
         }
         catch (Exception e)
         {
@@ -36,35 +36,28 @@ public class BookRepository : IBookRepository
         }
     }
 
-    public async Task<Book?> Create(BookTemplate template, IHttpContextAccessor accessor)
+    public async Task Create(BookTemplate template, IHttpContextAccessor accessor)
     {
         try
         {
-            List<Genre?> genres = new();
+            var result = await _dbContext.Database.ExecuteSqlAsync(
+                $"INSERT INTO public.book VALUES (default, {template.Title}, {template.Description}, {DateTime.UtcNow}, {template.ImagePath}, {template.AuthorId})");
 
-            foreach (var id in template.Genres)
+            if (result > 0)
             {
-                var genre = await _dbContext.Genres.FirstOrDefaultAsync(genre => genre.Id == id);
+                var book = await _dbContext.Books.FromSql($"SELECT * FROM public.book WHERE title = {template.Title}")
+                    .FirstOrDefaultAsync();
 
-                if (genre == null) continue;
-
-                genres.Add(genre);
+                foreach (var fId in template.Genres)
+                {
+                    await _dbContext.Database.ExecuteSqlAsync(
+                        $"INSERT INTO public.\"BookGenre\" VALUES ({book.Id}, {fId})"
+                    );
+                }
+                return;
             }
 
-            var book = new Book
-            {
-                Title = template.Title,
-                Description = template.Description,
-                CreatedAt = DateTime.UtcNow,
-                AuthorId = template.AuthorId,
-                ImagePath = template.ImagePath,
-                Genres = genres
-            };
-
-            await _dbContext.Books.AddAsync(book);
-            await _dbContext.SaveChangesAsync();
-
-            return book;
+            throw new Exception("Something went wrong while adding data");
         }
         catch (Exception e)
         {
@@ -81,7 +74,8 @@ public class BookRepository : IBookRepository
     {
         try
         {
-            return await _dbContext.Books.FirstOrDefaultAsync(book => book.Id == id);
+            return await _dbContext.Books.FromSql($"SELECT * FROM public.book where id = {id}").FirstAsync();
+            
         }
         catch (Exception e)
         {
@@ -94,38 +88,29 @@ public class BookRepository : IBookRepository
         }
     }
 
-    public async Task<Book?> UpdateById(long id, BookTemplate template, IHttpContextAccessor accessor)
+    public async Task UpdateById(long id, BookTemplate template, IHttpContextAccessor accessor)
     {
         try
         {
-            var book = await _dbContext.Books.FirstOrDefaultAsync(book => book.Id == id);
+            int result = await _dbContext.Database.ExecuteSqlAsync(
+                $"UPDATE public.book SET title={template.Title}, description={template.Description}, \"imagePath\"={template.ImagePath}, \"AuthorId\"={template.AuthorId} WHERE id = {id}");
 
-            if (book == null) return null;
-
-            List<Genre> genres = new();
-
-            foreach (var genreId in template.Genres)
+            if (result > 0)
             {
-                var genre = await _dbContext.Genres.FirstOrDefaultAsync(genre => genre.Id == genreId);
+                await _dbContext.Database.ExecuteSqlAsync($"delete from public.\"BookGenre\" where \"BooksId\" = {id}");
 
-                if (genre == null) continue;
+                foreach (var gId in template.Genres)
+                {
+                    await _dbContext.Database.ExecuteSqlAsync(
+                        $"INSERT INTO public.\"BookGenre\" VALUES ({id}, {gId})"
+                    );
+                }
 
-                genres.Add(genre);
+                return;
             }
 
-            // delete image     
 
-            book.Title = template.Title;
-            book.Description = template.Description;
-            book.CreatedAt = DateTime.UtcNow;
-            book.AuthorId = template.AuthorId;
-            book.ImagePath = template.ImagePath;
-            book.Genres = genres;
-
-            _dbContext.Books.Update(book);
-            await _dbContext.SaveChangesAsync();
-
-            return book;
+            throw new Exception("Something went wrong while updating data");
         }
         catch (Exception e)
         {
@@ -142,14 +127,11 @@ public class BookRepository : IBookRepository
     {
         try
         {
-            var book = await _dbContext.Books.FirstOrDefaultAsync(book => book.Id == id);
+            int res = await _dbContext.Database.ExecuteSqlAsync($"DELETE FROM public.book WHERE id = {id}");
 
-            if (book == null) return false;
+            if (res > 0) return true;
 
-            _dbContext.Remove(book);
-            await _dbContext.SaveChangesAsync();
-
-            return true;
+            return false;
         }
         catch (Exception e)
         {

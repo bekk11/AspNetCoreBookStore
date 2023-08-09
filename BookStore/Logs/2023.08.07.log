@@ -1,0 +1,712 @@
+2023-08-07 09:35:05,814 [3] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2023-08-07 09:35:16,904 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 09:35:16,914 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 09:35:16,915 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 09:35:16,915 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 09:35:20,660 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSMVUPI9GPR:00000003] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 09:35:22,104 [.NET ThreadPool Worker] ERROR BookStore.DAL.Repositories.AuthorRepository - 0HMSMVUPI9GPR:00000003 - GetAll(IHttpContextAccessor accessor) - ErrorMessage The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.
+2023-08-07 09:35:22,106 [.NET ThreadPool Worker] ERROR BookStore.Service.Implementations.AuthorService - 0HMSMVUPI9GPR:00000003 - ListService(IHttpContextAccessor accessor) - ErrorMessage The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.
+2023-08-07 09:35:22,119 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSMVUPI9GPR:00000003] - Status: 200 - SpentTime: 1457ms - Response Body: {"success":false,"message":"The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.","data":null}
+2023-08-07 09:38:36,805 [3] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2023-08-07 09:38:51,554 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 09:38:51,563 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 09:38:51,563 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 09:38:51,563 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 09:38:57,081 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN00PKG19I:00000003] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 09:39:29,514 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN00PKG19J:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 10:24:09,780 [13] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2023-08-07 10:24:21,467 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 10:24:21,483 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 10:24:21,484 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 10:24:21,485 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 10:24:30,336 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN0Q762CK2:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 10:24:31,834 [.NET ThreadPool Worker] ERROR BookStore.DAL.Repositories.AuthorRepository - 0HMSN0Q762CK2:00000001 - GetAll(IHttpContextAccessor accessor) - ErrorMessage The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.
+2023-08-07 10:24:31,835 [.NET ThreadPool Worker] ERROR BookStore.Service.Implementations.AuthorService - 0HMSN0Q762CK2:00000001 - ListService(IHttpContextAccessor accessor) - ErrorMessage The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.
+2023-08-07 10:24:31,847 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN0Q762CK2:00000001] - Status: 200 - SpentTime: 1509ms - Response Body: {"success":false,"message":"The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.","data":null}
+2023-08-07 10:48:43,309 [9] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2023-08-07 10:48:49,993 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 10:48:50,005 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 10:48:50,005 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 10:48:50,005 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 10:49:02,895 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN17SRE03A:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 10:49:04,105 [.NET ThreadPool Worker] ERROR BookStore.DAL.Repositories.AuthorRepository - 0HMSN17SRE03A:00000001 - GetAll(IHttpContextAccessor accessor) - ErrorMessage The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.
+2023-08-07 10:49:04,107 [.NET ThreadPool Worker] ERROR BookStore.Service.Implementations.AuthorService - 0HMSN17SRE03A:00000001 - ListService(IHttpContextAccessor accessor) - ErrorMessage The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.
+2023-08-07 10:49:04,120 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN17SRE03A:00000001] - Status: 200 - SpentTime: 1223ms - Response Body: {"success":false,"message":"The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.","data":null}
+2023-08-07 10:50:37,528 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN17SRE03B:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 10:50:37,551 [.NET ThreadPool Worker] ERROR BookStore.DAL.Repositories.AuthorRepository - 0HMSN17SRE03B:00000001 - GetAll(IHttpContextAccessor accessor) - ErrorMessage The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.
+2023-08-07 10:50:37,551 [.NET ThreadPool Worker] ERROR BookStore.Service.Implementations.AuthorService - 0HMSN17SRE03B:00000001 - ListService(IHttpContextAccessor accessor) - ErrorMessage The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.
+2023-08-07 10:50:37,552 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN17SRE03B:00000001] - Status: 200 - SpentTime: 23ms - Response Body: {"success":false,"message":"The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.","data":null}
+2023-08-07 10:50:52,027 [17] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2023-08-07 10:51:03,106 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 10:51:03,115 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 10:51:03,115 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 10:51:03,115 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 10:51:13,410 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN194G7CBI:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 10:53:15,184 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 10:53:15,194 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 10:53:15,194 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 10:53:15,194 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 10:53:19,738 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN1ABSACMS:00000003] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 10:56:33,756 [.NET ThreadPool Worker] ERROR BookStore.DAL.Repositories.AuthorRepository - 0HMSN1ABSACMS:00000003 - GetAll(IHttpContextAccessor accessor) - ErrorMessage The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.
+2023-08-07 10:56:55,167 [.NET ThreadPool Worker] ERROR BookStore.Service.Implementations.AuthorService - 0HMSN1ABSACMS:00000003 - ListService(IHttpContextAccessor accessor) - ErrorMessage The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.
+2023-08-07 10:56:55,182 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN1ABSACMS:00000003] - Status: 200 - SpentTime: 215443ms - Response Body: {"success":false,"message":"The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.","data":null}
+2023-08-07 11:04:18,456 [1] INFO  Microsoft.EntityFrameworkCore.Migrations - Applying migration '20230807060357_changed table, column names'.
+2023-08-07 11:08:39,058 [1] INFO  Microsoft.EntityFrameworkCore.Migrations - Applying migration '20230807060829_changed table, column names'.
+2023-08-07 11:10:36,532 [1] INFO  Microsoft.EntityFrameworkCore.Migrations - Applying migration '20230807061029_initial'.
+2023-08-07 11:12:05,491 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 11:12:05,501 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 11:12:05,501 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 11:12:05,501 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 11:12:11,319 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN1KSNMCJ6:00000001] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "string", "lastname": "string", "age": 0}
+2023-08-07 11:12:13,053 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN1KSNMCJ6:00000001] - Status: 200 - SpentTime: 1733ms - Response Body: {"success":true,"message":"AUTHOR SUCCESSFULLY CREATED","data":{"id":1,"firstname":"string","lastname":"string","age":0}}
+2023-08-07 11:12:15,742 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN1KSNMCJ6:00000002] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "string", "lastname": "string", "age": 0}
+2023-08-07 11:12:15,817 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN1KSNMCJ6:00000002] - Status: 200 - SpentTime: 75ms - Response Body: {"success":true,"message":"AUTHOR SUCCESSFULLY CREATED","data":{"id":2,"firstname":"string","lastname":"string","age":0}}
+2023-08-07 11:12:16,615 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN1KSNMCJ6:00000003] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "string", "lastname": "string", "age": 0}
+2023-08-07 11:12:16,652 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN1KSNMCJ6:00000003] - Status: 200 - SpentTime: 36ms - Response Body: {"success":true,"message":"AUTHOR SUCCESSFULLY CREATED","data":{"id":3,"firstname":"string","lastname":"string","age":0}}
+2023-08-07 11:12:17,309 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN1KSNMCJ6:00000004] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "string", "lastname": "string", "age": 0}
+2023-08-07 11:12:17,336 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN1KSNMCJ6:00000004] - Status: 200 - SpentTime: 27ms - Response Body: {"success":true,"message":"AUTHOR SUCCESSFULLY CREATED","data":{"id":4,"firstname":"string","lastname":"string","age":0}}
+2023-08-07 11:12:18,401 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN1KSNMCJ6:00000005] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "string", "lastname": "string", "age": 0}
+2023-08-07 11:12:18,423 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN1KSNMCJ6:00000005] - Status: 200 - SpentTime: 21ms - Response Body: {"success":true,"message":"AUTHOR SUCCESSFULLY CREATED","data":{"id":5,"firstname":"string","lastname":"string","age":0}}
+2023-08-07 11:12:27,421 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN1KSNMCJ7:00000001] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "strfewfweing", "lastname": "striwefwefewng", "age": 15}
+2023-08-07 11:12:27,425 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN1KSNMCJ7:00000001] - Status: 200 - SpentTime: 3ms - Response Body: {"success":true,"message":"AUTHOR SUCCESSFULLY CREATED","data":{"id":6,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15}}
+2023-08-07 11:12:39,122 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN1KSNMCJ8:00000001] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "strfewfweing", "lastname": "striwefwefewng", "age": 15}
+2023-08-07 11:12:39,125 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN1KSNMCJ8:00000001] - Status: 200 - SpentTime: 2ms - Response Body: {"success":true,"message":"AUTHOR SUCCESSFULLY CREATED","data":{"id":7,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15}}
+2023-08-07 11:12:51,224 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN1KSNMCJ9:00000001] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "strfewfweifdskjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjfjpoiwjgfioweiogfhweighewigoewjgoewjgojewogjweogjewjgiewjgoewgoejgjeojgoejng", "lastname": "striwefwefewng", "age": 15}
+2023-08-07 11:12:51,228 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN1KSNMCJ9:00000001] - Status: 200 - SpentTime: 3ms - Response Body: {"success":true,"message":"AUTHOR SUCCESSFULLY CREATED","data":{"id":8,"firstname":"strfewfweifdskjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjfjpoiwjgfioweiogfhweighewigoewjgoewjgojewogjweogjewjgiewjgoewgoejgjeojgoejng","lastname":"striwefwefewng","age":15}}
+2023-08-07 11:13:08,960 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN1KSNMCJA:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/get/1 - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 11:13:09,278 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN1KSNMCJA:00000001] - Status: 200 - SpentTime: 317ms - Response Body: {"success":true,"message":"SUCCESS","data":{"id":1,"firstname":"string","lastname":"string","age":0}}
+2023-08-07 11:13:15,233 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN1KSNMCJB:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/get/1 - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 11:13:15,242 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN1KSNMCJB:00000001] - Status: 200 - SpentTime: 8ms - Response Body: {"success":true,"message":"SUCCESS","data":{"id":1,"firstname":"string","lastname":"string","age":0}}
+2023-08-07 11:13:22,160 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN1KSNMCJC:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/get/4 - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 11:13:22,163 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN1KSNMCJC:00000001] - Status: 200 - SpentTime: 2ms - Response Body: {"success":true,"message":"SUCCESS","data":{"id":4,"firstname":"string","lastname":"string","age":0}}
+2023-08-07 11:13:35,779 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN1KSNMCJD:00000001] - Schema: http - Method: DELETE - Host: localhost:5049 - Path: /author/delete/2 - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 11:13:35,822 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN1KSNMCJD:00000001] - Status: 200 - SpentTime: 43ms - Response Body: {"success":true,"message":"AUTHOR DELETED SUCCESSFULLY","data":null}
+2023-08-07 11:15:09,498 [15] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2023-08-07 11:15:23,568 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 11:15:23,585 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 11:15:23,586 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 11:15:23,586 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 11:15:28,779 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN1MNPK2R3:00000003] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 11:16:32,494 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 11:16:32,510 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 11:16:32,511 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 11:16:32,511 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 11:16:36,739 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN1NC7FABN:00000003] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 11:44:03,359 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 11:44:03,375 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 11:44:03,375 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 11:44:03,375 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 11:44:07,555 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN26O8LO4H:00000003] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 11:49:37,086 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 11:49:37,098 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 11:49:37,098 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 11:49:37,098 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 11:49:40,342 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN29RNH6TC:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 11:51:20,988 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 11:51:20,998 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 11:51:20,998 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 11:51:20,998 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 11:51:25,100 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN2AQPHTR8:00000003] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 11:51:29,497 [.NET ThreadPool Worker] ERROR BookStore.DAL.Repositories.AuthorRepository - 0HMSN2AQPHTR8:00000003 - GetAll(IHttpContextAccessor accessor) - ErrorMessage The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.
+2023-08-07 11:51:29,546 [.NET ThreadPool Worker] ERROR BookStore.Service.Implementations.AuthorService - 0HMSN2AQPHTR8:00000003 - ListService(IHttpContextAccessor accessor) - ErrorMessage The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.
+2023-08-07 11:51:29,561 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN2AQPHTR8:00000003] - Status: 200 - SpentTime: 4460ms - Response Body: {"success":false,"message":"The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.","data":null}
+2023-08-07 11:51:38,798 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN2AQPHTR8:00000004] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 11:52:46,085 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 11:52:46,097 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 11:52:46,097 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 11:52:46,097 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 11:52:50,339 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN2BK24MGS:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 11:53:23,220 [.NET ThreadPool Worker] ERROR BookStore.DAL.Repositories.AuthorRepository - 0HMSN2BK24MGS:00000001 - GetAll(IHttpContextAccessor accessor) - ErrorMessage The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.
+2023-08-07 11:53:23,270 [.NET ThreadPool Worker] ERROR BookStore.Service.Implementations.AuthorService - 0HMSN2BK24MGS:00000001 - ListService(IHttpContextAccessor accessor) - ErrorMessage The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.
+2023-08-07 11:53:23,284 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN2BK24MGS:00000001] - Status: 200 - SpentTime: 32943ms - Response Body: 
+2023-08-07 11:53:35,260 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN2BK24MH0:00000003] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 11:54:31,394 [.NET ThreadPool Worker] ERROR BookStore.DAL.Repositories.AuthorRepository - 0HMSN2BK24MH0:00000003 - GetAll(IHttpContextAccessor accessor) - ErrorMessage The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.
+2023-08-07 11:54:31,552 [.NET ThreadPool Worker] ERROR BookStore.Service.Implementations.AuthorService - 0HMSN2BK24MH0:00000003 - ListService(IHttpContextAccessor accessor) - ErrorMessage The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.
+2023-08-07 11:54:31,560 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN2BK24MH0:00000003] - Status: 200 - SpentTime: 56299ms - Response Body: {"success":false,"message":"The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.","data":null}
+2023-08-07 11:54:39,164 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 11:54:39,175 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 11:54:39,176 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 11:54:39,176 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 11:55:43,419 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN2CLO4V10:00000003] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 11:57:11,989 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 11:57:12,030 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 11:57:12,031 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 11:57:12,031 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 11:57:15,636 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN2E3CF6F6:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 11:58:18,811 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 11:58:18,820 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 11:58:18,821 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 11:58:18,821 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 11:58:25,259 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN2EN91SSO:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 11:59:20,776 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN2EN91SSO:00000001] - Status: 200 - SpentTime: 55515ms - Response Body: {"success":true,"message":"SUCCESS","data":[{"id":1,"firstname":"string","lastname":"string","age":0},{"id":3,"firstname":"string","lastname":"string","age":0},{"id":4,"firstname":"string","lastname":"string","age":0},{"id":5,"firstname":"string","lastname":"string","age":0},{"id":6,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":7,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":8,"firstname":"strfewfweifdskjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjfjpoiwjgfioweiogfhweighewigoewjgoewjgojewogjweogjewjgiewjgoewgoejgjeojgoejng","lastname":"striwefwefewng","age":15}]}
+2023-08-07 11:59:24,874 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN2EN91SSO:00000002] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 12:00:18,863 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 12:00:18,879 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 12:00:18,880 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 12:00:18,880 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 12:00:24,857 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN2FR0EECE:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 12:02:10,006 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 12:02:10,019 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 12:02:10,020 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 12:02:10,020 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 12:02:10,095 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN2GS2A7G5:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: 127.0.0.1 - RequestBody: 
+2023-08-07 12:27:50,565 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 12:27:50,578 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 12:27:50,579 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 12:27:50,579 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 12:27:56,948 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN2V78K0CH:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 12:27:58,088 [.NET ThreadPool Worker] ERROR BookStore.DAL.Repositories.AuthorRepository - 0HMSN2V78K0CH:00000001 - GetAll(IHttpContextAccessor accessor) - ErrorMessage The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.
+2023-08-07 12:27:58,090 [.NET ThreadPool Worker] ERROR BookStore.Service.Implementations.AuthorService - 0HMSN2V78K0CH:00000001 - ListService(IHttpContextAccessor accessor) - ErrorMessage The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.
+2023-08-07 12:27:58,101 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN2V78K0CH:00000001] - Status: 200 - SpentTime: 1151ms - Response Body: {"success":false,"message":"The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.","data":null}
+2023-08-07 12:28:10,947 [3] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2023-08-07 12:28:15,296 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 12:28:15,306 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 12:28:15,306 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 12:28:15,306 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 12:28:21,200 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN2VEKVGRQ:00000003] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 12:28:22,376 [.NET ThreadPool Worker] ERROR BookStore.DAL.Repositories.AuthorRepository - 0HMSN2VEKVGRQ:00000003 - GetAll(IHttpContextAccessor accessor) - ErrorMessage The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.
+2023-08-07 12:28:22,378 [.NET ThreadPool Worker] ERROR BookStore.Service.Implementations.AuthorService - 0HMSN2VEKVGRQ:00000003 - ListService(IHttpContextAccessor accessor) - ErrorMessage The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.
+2023-08-07 12:28:22,389 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN2VEKVGRQ:00000003] - Status: 200 - SpentTime: 1188ms - Response Body: {"success":false,"message":"The element type 'BookStore.Domain.Entity.Author' used in 'SqlQuery' method is not natively supported by your database provider. Either use a supported element type, or use ModelConfigurationBuilder.DefaultTypeMapping to define a mapping for your type.","data":null}
+2023-08-07 14:07:56,431 [3] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2023-08-07 14:08:09,041 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 14:08:09,051 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 14:08:09,052 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 14:08:09,052 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 14:08:12,625 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN4N8R53R4:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 14:08:14,549 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN4N8R53R4:00000001] - Status: 200 - SpentTime: 1922ms - Response Body: {"success":true,"message":"SUCCESS","data":[{"id":1,"firstname":"string","lastname":"string","age":0},{"id":3,"firstname":"string","lastname":"string","age":0},{"id":4,"firstname":"string","lastname":"string","age":0},{"id":5,"firstname":"string","lastname":"string","age":0},{"id":6,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":7,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":8,"firstname":"strfewfweifdskjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjfjpoiwjgfioweiogfhweighewigoewjgoewjgojewogjweogjewjgiewjgoewgoejgjeojgoejng","lastname":"striwefwefewng","age":15},{"id":9,"firstname":"Bekzod","lastname":"Toshpulatov","age":19},{"id":10,"firstname":"Bekzod","lastname":"Toshpulatov","age":19}]}
+2023-08-07 14:08:21,071 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN4N8R53R5:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 14:08:21,100 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN4N8R53R5:00000001] - Status: 200 - SpentTime: 29ms - Response Body: {"success":true,"message":"SUCCESS","data":[{"id":1,"firstname":"string","lastname":"string","age":0},{"id":3,"firstname":"string","lastname":"string","age":0},{"id":4,"firstname":"string","lastname":"string","age":0},{"id":5,"firstname":"string","lastname":"string","age":0},{"id":6,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":7,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":8,"firstname":"strfewfweifdskjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjfjpoiwjgfioweiogfhweighewigoewjgoewjgojewogjweogjewjgiewjgoewgoejgjeojgoejng","lastname":"striwefwefewng","age":15},{"id":9,"firstname":"Bekzod","lastname":"Toshpulatov","age":19},{"id":10,"firstname":"Bekzod","lastname":"Toshpulatov","age":19}]}
+2023-08-07 14:08:37,433 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN4N8R53R6:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 14:08:37,459 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN4N8R53R6:00000001] - Status: 200 - SpentTime: 25ms - Response Body: {"success":true,"message":"SUCCESS","data":[{"id":1,"firstname":"string","lastname":"string","age":0},{"id":3,"firstname":"string","lastname":"string","age":0},{"id":4,"firstname":"string","lastname":"string","age":0},{"id":5,"firstname":"string","lastname":"string","age":0},{"id":6,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":7,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":8,"firstname":"strfewfweifdskjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjfjpoiwjgfioweiogfhweighewigoewjgoewjgojewogjweogjewjgiewjgoewgoejgjeojgoejng","lastname":"striwefwefewng","age":15},{"id":9,"firstname":"Bekzod","lastname":"Toshpulatov","age":19},{"id":10,"firstname":"Bekzod","lastname":"Toshpulatov","age":19}]}
+2023-08-07 14:08:42,794 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN4N8R53R7:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 14:08:42,801 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN4N8R53R7:00000001] - Status: 200 - SpentTime: 6ms - Response Body: {"success":true,"message":"SUCCESS","data":[{"id":1,"firstname":"string","lastname":"string","age":0},{"id":3,"firstname":"string","lastname":"string","age":0},{"id":4,"firstname":"string","lastname":"string","age":0},{"id":5,"firstname":"string","lastname":"string","age":0},{"id":6,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":7,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":8,"firstname":"strfewfweifdskjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjfjpoiwjgfioweiogfhweighewigoewjgoewjgojewogjweogjewjgiewjgoewgoejgjeojgoejng","lastname":"striwefwefewng","age":15},{"id":9,"firstname":"Bekzod","lastname":"Toshpulatov","age":19},{"id":10,"firstname":"Bekzod","lastname":"Toshpulatov","age":19}]}
+2023-08-07 14:08:53,698 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN4N8R53R8:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 14:08:53,703 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN4N8R53R8:00000001] - Status: 200 - SpentTime: 5ms - Response Body: {"success":true,"message":"SUCCESS","data":[{"id":1,"firstname":"string","lastname":"string","age":0},{"id":3,"firstname":"string","lastname":"string","age":0},{"id":4,"firstname":"string","lastname":"string","age":0},{"id":5,"firstname":"string","lastname":"string","age":0},{"id":6,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":7,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":8,"firstname":"strfewfweifdskjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjfjpoiwjgfioweiogfhweighewigoewjgoewjgojewogjweogjewjgiewjgoewgoejgjeojgoejng","lastname":"striwefwefewng","age":15},{"id":9,"firstname":"Bekzod","lastname":"Toshpulatov","age":19},{"id":10,"firstname":"Bekzod","lastname":"Toshpulatov","age":19}]}
+2023-08-07 14:09:03,349 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN4N8R53R9:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /book/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 14:09:03,614 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN4N8R53R9:00000001] - Status: 200 - SpentTime: 265ms - Response Body: {"success":true,"message":"SUCCESS","data":[]}
+2023-08-07 14:09:08,184 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN4N8R53RA:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /book/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 14:09:08,190 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN4N8R53RA:00000001] - Status: 200 - SpentTime: 6ms - Response Body: {"success":true,"message":"SUCCESS","data":[]}
+2023-08-07 15:04:05,655 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 15:04:05,669 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 15:04:05,670 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 15:04:05,670 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 15:04:11,750 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN5MHAK3HN:00000003] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "string", "lastname": "string", "age": 0}
+2023-08-07 15:05:29,138 [.NET ThreadPool Worker] ERROR Microsoft.EntityFrameworkCore.Query - An exception occurred while iterating over the results of a query for context type 'BookStore.DAL.BookStoreDbContext'.
+Npgsql.PostgresException (0x80004005): 22P02: invalid input syntax for type integer: "@p2"
+
+POSITION: 68
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+  Exception data:
+    Severity: ERROR
+    SqlState: 22P02
+    MessageText: invalid input syntax for type integer: "@p2"
+    Position: 68
+    File: numutils.c
+    Line: 235
+    Routine: pg_strtoint32
+Npgsql.PostgresException (0x80004005): 22P02: invalid input syntax for type integer: "@p2"
+
+POSITION: 68
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+  Exception data:
+    Severity: ERROR
+    SqlState: 22P02
+    MessageText: invalid input syntax for type integer: "@p2"
+    Position: 68
+    File: numutils.c
+    Line: 235
+    Routine: pg_strtoint32
+2023-08-07 15:07:43,925 [.NET ThreadPool Worker] ERROR Microsoft.EntityFrameworkCore.Query - An exception occurred while iterating over the results of a query for context type 'BookStore.DAL.BookStoreDbContext'.
+Npgsql.PostgresException (0x80004005): 22P02: invalid input syntax for type integer: "@p2"
+
+POSITION: 68
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+  Exception data:
+    Severity: ERROR
+    SqlState: 22P02
+    MessageText: invalid input syntax for type integer: "@p2"
+    Position: 68
+    File: numutils.c
+    Line: 235
+    Routine: pg_strtoint32
+Npgsql.PostgresException (0x80004005): 22P02: invalid input syntax for type integer: "@p2"
+
+POSITION: 68
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+  Exception data:
+    Severity: ERROR
+    SqlState: 22P02
+    MessageText: invalid input syntax for type integer: "@p2"
+    Position: 68
+    File: numutils.c
+    Line: 235
+    Routine: pg_strtoint32
+2023-08-07 15:08:02,205 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN5MHAK3HN:00000003] - Status: 200 - SpentTime: 230453ms - Response Body: {"success":true,"message":"AUTHOR SUCCESSFULLY CREATED","data":{"id":0,"firstname":"string","lastname":"string","age":0}}
+2023-08-07 15:10:08,861 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 15:10:08,878 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 15:10:08,878 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 15:10:08,879 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 15:10:13,510 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN5PTGM6S7:00000003] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 15:10:15,662 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN5PTGM6S7:00000003] - Status: 200 - SpentTime: 2149ms - Response Body: {"success":true,"message":"SUCCESS","data":[{"id":1,"firstname":"string","lastname":"string","age":0},{"id":3,"firstname":"string","lastname":"string","age":0},{"id":4,"firstname":"string","lastname":"string","age":0},{"id":5,"firstname":"string","lastname":"string","age":0},{"id":6,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":7,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":8,"firstname":"strfewfweifdskjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjfjpoiwjgfioweiogfhweighewigoewjgoewjgojewogjweogjewjgiewjgoewgoejgjeojgoejng","lastname":"striwefwefewng","age":15},{"id":9,"firstname":"Bekzod","lastname":"Toshpulatov","age":19},{"id":10,"firstname":"Bekzod","lastname":"Toshpulatov","age":19}]}
+2023-08-07 15:10:36,421 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN5PTGM6S8:00000001] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "gwegewg", "lastname": "gewgewgew", "age": 21}
+2023-08-07 15:11:05,461 [.NET ThreadPool Worker] ERROR Microsoft.EntityFrameworkCore.Query - An exception occurred while iterating over the results of a query for context type 'BookStore.DAL.BookStoreDbContext'.
+System.InvalidOperationException: The required column 'id' was not present in the results of a 'FromSql' operation.
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.BuildIndexMap(IReadOnlyList`1 columnNames, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: The required column 'id' was not present in the results of a 'FromSql' operation.
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.BuildIndexMap(IReadOnlyList`1 columnNames, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+2023-08-07 15:12:02,252 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN5PTGM6S8:00000001] - Status: 200 - SpentTime: 85830ms - Response Body: {"success":true,"message":"AUTHOR SUCCESSFULLY CREATED","data":{"id":0,"firstname":"gwegewg","lastname":"gewgewgew","age":21}}
+2023-08-07 15:12:52,541 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 15:12:52,553 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 15:12:52,553 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 15:12:52,553 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 15:13:16,324 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN5REBFST1:00000001] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "Ali", "lastname": "Mardon", "age": 54}
+2023-08-07 15:13:18,088 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN5REBFST1:00000001] - Status: 200 - SpentTime: 1760ms - Response Body: {"success":true,"message":"AUTHOR SUCCESSFULLY CREATED","data":{"id":0,"firstname":"Ali","lastname":"Mardon","age":54}}
+2023-08-07 15:14:13,914 [9] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2023-08-07 15:14:18,496 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 15:14:18,544 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 15:14:18,544 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 15:14:18,544 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 15:14:28,887 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN5S7U35OP:00000001] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "string", "lastname": "string", "age": 0}
+2023-08-07 15:14:31,077 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN5S7U35OP:00000001] - Status: 200 - SpentTime: 2188ms - Response Body: {"success":true,"message":"AUTHOR SUCCESSFULLY CREATED","data":{"id":0,"firstname":"string","lastname":"string","age":0}}
+2023-08-07 15:28:52,227 [3] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2023-08-07 15:29:02,405 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 15:29:02,414 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 15:29:02,414 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 15:29:02,414 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 15:29:59,616 [3] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2023-08-07 15:30:02,994 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 15:30:03,001 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 15:30:03,001 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 15:30:03,001 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 15:30:11,167 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN651AMT4G:00000003] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "string", "lastname": "string", "age": 0}
+2023-08-07 15:30:12,056 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN651AMT4G:00000003] - Status: 200 - SpentTime: 887ms - Response Body: {"success":true,"message":"AUTHOR SUCCESSFULLY CREATED","data":{"id":0,"firstname":"string","lastname":"string","age":0}}
+2023-08-07 15:31:01,974 [3] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2023-08-07 15:31:06,337 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 15:31:06,345 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 15:31:06,345 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 15:31:06,345 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 15:31:14,316 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN65K67GUN:00000001] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "string", "lastname": "string", "age": 0}
+2023-08-07 15:31:15,108 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN65K67GUN:00000001] - Status: 200 - SpentTime: 790ms - Response Body: {"success":true,"message":"AUTHOR SUCCESSFULLY CREATED","data":{"id":0,"firstname":"string","lastname":"string","age":0}}
+2023-08-07 15:33:19,105 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN65K67GUO:00000001] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "string", "lastname": "string", "age": 0}
+2023-08-07 15:33:19,150 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN65K67GUO:00000001] - Status: 200 - SpentTime: 44ms - Response Body: {"success":true,"message":"AUTHOR SUCCESSFULLY CREATED","data":{"id":0,"firstname":"string","lastname":"string","age":0}}
+2023-08-07 15:46:18,729 [11] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2023-08-07 15:46:31,530 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 15:46:31,541 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 15:46:31,541 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 15:46:31,541 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 15:46:35,449 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN6E7TGGV6:00000003] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 15:46:38,144 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN6E7TGGV6:00000003] - Status: 200 - SpentTime: 2690ms - Response Body: {"success":true,"message":"SUCCESS","data":[{"id":1,"firstname":"string","lastname":"string","age":0},{"id":3,"firstname":"string","lastname":"string","age":0},{"id":4,"firstname":"string","lastname":"string","age":0},{"id":5,"firstname":"string","lastname":"string","age":0},{"id":6,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":7,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":8,"firstname":"strfewfweifdskjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjfjpoiwjgfioweiogfhweighewigoewjgoewjgojewogjweogjewjgiewjgoewgoejgjeojgoejng","lastname":"striwefwefewng","age":15},{"id":9,"firstname":"Bekzod","lastname":"Toshpulatov","age":19},{"id":10,"firstname":"Bekzod","lastname":"Toshpulatov","age":19},{"id":11,"firstname":"@p0","lastname":"@p1","age":21}]}
+2023-08-07 15:47:47,270 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN6E7TGGV7:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 15:47:47,423 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN6E7TGGV7:00000001] - Status: 200 - SpentTime: 152ms - Response Body: {"success":true,"message":"SUCCESS","data":[{"id":1,"firstname":"string","lastname":"string","age":0},{"id":3,"firstname":"string","lastname":"string","age":0},{"id":4,"firstname":"string","lastname":"string","age":0},{"id":5,"firstname":"string","lastname":"string","age":0},{"id":6,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":7,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":8,"firstname":"strfewfweifdskjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjfjpoiwjgfioweiogfhweighewigoewjgoewjgojewogjweogjewjgiewjgoewgoejgjeojgoejng","lastname":"striwefwefewng","age":15},{"id":9,"firstname":"Bekzod","lastname":"Toshpulatov","age":19},{"id":10,"firstname":"Bekzod","lastname":"Toshpulatov","age":19},{"id":11,"firstname":"@p0","lastname":"@p1","age":21}]}
+2023-08-07 15:47:55,071 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN6E7TGGV8:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 15:47:55,108 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN6E7TGGV8:00000001] - Status: 200 - SpentTime: 36ms - Response Body: {"success":true,"message":"SUCCESS","data":[{"id":1,"firstname":"string","lastname":"string","age":0},{"id":3,"firstname":"string","lastname":"string","age":0},{"id":4,"firstname":"string","lastname":"string","age":0},{"id":5,"firstname":"string","lastname":"string","age":0},{"id":6,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":7,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":8,"firstname":"strfewfweifdskjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjfjpoiwjgfioweiogfhweighewigoewjgoewjgojewogjweogjewjgiewjgoewgoejgjeojgoejng","lastname":"striwefwefewng","age":15},{"id":9,"firstname":"Bekzod","lastname":"Toshpulatov","age":19},{"id":10,"firstname":"Bekzod","lastname":"Toshpulatov","age":19},{"id":11,"firstname":"@p0","lastname":"@p1","age":21}]}
+2023-08-07 15:48:38,451 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN6E7TGGV9:00000001] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "string", "lastname": "string", "age": 0}
+2023-08-07 15:49:32,803 [.NET ThreadPool Worker] ERROR Microsoft.EntityFrameworkCore.Query - An exception occurred while iterating over the results of a query for context type 'BookStore.DAL.BookStoreDbContext'.
+System.InvalidOperationException: The required column 'id' was not present in the results of a 'FromSql' operation.
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.BuildIndexMap(IReadOnlyList`1 columnNames, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: The required column 'id' was not present in the results of a 'FromSql' operation.
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.BuildIndexMap(IReadOnlyList`1 columnNames, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
+2023-08-07 15:50:03,125 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN6E7TGGV9:00000001] - Status: 200 - SpentTime: 84673ms - Response Body: {"success":true,"message":"AUTHOR SUCCESSFULLY CREATED","data":{"id":0,"firstname":"string","lastname":"string","age":0}}
+2023-08-07 15:56:51,725 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 15:56:51,734 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 15:56:51,735 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 15:56:51,735 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 15:57:06,069 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN6K0OBR4V:00000001] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "sfdfsdf", "lastname": "sfdsdfds", "age": 19}
+2023-08-07 15:58:13,967 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 15:58:13,975 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 15:58:13,975 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 15:58:13,975 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 15:58:24,252 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN6KP9D46F:00000001] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "fdsfds", "lastname": "strfsdfsding", "age": 0}
+2023-08-07 15:58:25,286 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN6KP9D46F:00000001] - Status: 200 - SpentTime: 1032ms - Response Body: {"success":true,"message":"AUTHOR SUCCESSFULLY CREATED","data":{"id":0,"firstname":"fdsfds","lastname":"strfsdfsding","age":0}}
+2023-08-07 16:02:24,502 [3] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2023-08-07 16:02:28,012 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 16:02:28,018 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 16:02:28,019 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 16:02:28,019 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 16:02:33,753 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN6N4VPC1S:00000003] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 16:02:34,932 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN6N4VPC1S:00000003] - Status: 200 - SpentTime: 1178ms - Response Body: {"success":true,"message":"SUCCESS","data":[{"id":1,"firstname":"string","lastname":"string","age":0},{"id":3,"firstname":"string","lastname":"string","age":0},{"id":4,"firstname":"string","lastname":"string","age":0},{"id":5,"firstname":"string","lastname":"string","age":0},{"id":6,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":7,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":8,"firstname":"strfewfweifdskjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjfjpoiwjgfioweiogfhweighewigoewjgoewjgojewogjweogjewjgiewjgoewgoejgjeojgoejng","lastname":"striwefwefewng","age":15},{"id":9,"firstname":"Bekzod","lastname":"Toshpulatov","age":19},{"id":10,"firstname":"Bekzod","lastname":"Toshpulatov","age":19},{"id":11,"firstname":"@p0","lastname":"@p1","age":21},{"id":150,"firstname":"dsadasdas","lastname":"dasdasdsad","age":15}]}
+2023-08-07 16:02:59,030 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN6N4VPC1T:00000001] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "Aziza", "lastname": "Rametova", "age": 21}
+2023-08-07 16:02:59,075 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN6N4VPC1T:00000001] - Status: 200 - SpentTime: 44ms - Response Body: {"success":true,"message":"AUTHOR SUCCESSFULLY CREATED","data":{"id":0,"firstname":"Aziza","lastname":"Rametova","age":21}}
+2023-08-07 16:03:27,020 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN6N4VPC20:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 16:03:27,078 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN6N4VPC20:00000001] - Status: 200 - SpentTime: 57ms - Response Body: {"success":true,"message":"SUCCESS","data":[{"id":1,"firstname":"string","lastname":"string","age":0},{"id":3,"firstname":"string","lastname":"string","age":0},{"id":4,"firstname":"string","lastname":"string","age":0},{"id":5,"firstname":"string","lastname":"string","age":0},{"id":6,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":7,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":8,"firstname":"strfewfweifdskjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjfjpoiwjgfioweiogfhweighewigoewjgoewjgojewogjweogjewjgiewjgoewgoejgjeojgoejng","lastname":"striwefwefewng","age":15},{"id":9,"firstname":"Bekzod","lastname":"Toshpulatov","age":19},{"id":10,"firstname":"Bekzod","lastname":"Toshpulatov","age":19},{"id":11,"firstname":"@p0","lastname":"@p1","age":21},{"id":150,"firstname":"dsadasdas","lastname":"dasdasdsad","age":15}]}
+2023-08-07 16:04:29,011 [3] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2023-08-07 16:04:32,156 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 16:04:32,161 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 16:04:32,162 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 16:04:32,162 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 16:04:36,302 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN6OA302AT:00000003] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "Aziza", "lastname": "Rametova", "age": 21}
+2023-08-07 16:04:37,119 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN6OA302AT:00000003] - Status: 200 - SpentTime: 816ms - Response Body: {"success":true,"message":"AUTHOR SUCCESSFULLY CREATED","data":{"id":0,"firstname":"Aziza","lastname":"Rametova","age":21}}
+2023-08-07 17:02:23,219 [12] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2023-08-07 17:03:01,012 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 17:03:01,019 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 17:03:01,020 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 17:03:01,020 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 17:03:05,377 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN7OVPM7TK:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 17:03:06,727 [.NET ThreadPool Worker] ERROR Microsoft.EntityFrameworkCore.Query - An exception occurred while iterating over the results of a query for context type 'BookStore.DAL.BookStoreDbContext'.
+Npgsql.PostgresException (0x80004005): 42601: syntax error at end of input
+
+POSITION: 19
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42601
+    MessageText: syntax error at end of input
+    Position: 19
+    File: scan.l
+    Line: 1184
+    Routine: scanner_yyerror
+Npgsql.PostgresException (0x80004005): 42601: syntax error at end of input
+
+POSITION: 19
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42601
+    MessageText: syntax error at end of input
+    Position: 19
+    File: scan.l
+    Line: 1184
+    Routine: scanner_yyerror
+2023-08-07 17:03:06,731 [.NET ThreadPool Worker] ERROR BookStore.DAL.Repositories.AuthorRepository - 0HMSN7OVPM7TK:00000001 - GetAll(IHttpContextAccessor accessor) - ErrorMessage 42601: syntax error at end of input
+
+POSITION: 19
+2023-08-07 17:03:06,731 [.NET ThreadPool Worker] ERROR BookStore.Service.Implementations.AuthorService - 0HMSN7OVPM7TK:00000001 - ListService(IHttpContextAccessor accessor) - ErrorMessage 42601: syntax error at end of input
+
+POSITION: 19
+2023-08-07 17:03:06,744 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN7OVPM7TK:00000001] - Status: 200 - SpentTime: 1365ms - Response Body: {"success":false,"message":"42601: syntax error at end of input\r\n\r\nPOSITION: 19","data":null}
+2023-08-07 17:07:34,743 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN7OVPM7TL:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 17:07:34,780 [.NET ThreadPool Worker] ERROR Microsoft.EntityFrameworkCore.Query - An exception occurred while iterating over the results of a query for context type 'BookStore.DAL.BookStoreDbContext'.
+Npgsql.PostgresException (0x80004005): 42601: syntax error at end of input
+
+POSITION: 19
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42601
+    MessageText: syntax error at end of input
+    Position: 19
+    File: scan.l
+    Line: 1184
+    Routine: scanner_yyerror
+Npgsql.PostgresException (0x80004005): 42601: syntax error at end of input
+
+POSITION: 19
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42601
+    MessageText: syntax error at end of input
+    Position: 19
+    File: scan.l
+    Line: 1184
+    Routine: scanner_yyerror
+2023-08-07 17:07:34,788 [.NET ThreadPool Worker] ERROR BookStore.DAL.Repositories.AuthorRepository - 0HMSN7OVPM7TL:00000001 - GetAll(IHttpContextAccessor accessor) - ErrorMessage 42601: syntax error at end of input
+
+POSITION: 19
+2023-08-07 17:07:34,788 [.NET ThreadPool Worker] ERROR BookStore.Service.Implementations.AuthorService - 0HMSN7OVPM7TL:00000001 - ListService(IHttpContextAccessor accessor) - ErrorMessage 42601: syntax error at end of input
+
+POSITION: 19
+2023-08-07 17:07:34,789 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN7OVPM7TL:00000001] - Status: 200 - SpentTime: 46ms - Response Body: {"success":false,"message":"42601: syntax error at end of input\r\n\r\nPOSITION: 19","data":null}
+2023-08-07 17:07:35,936 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN7OVPM7TL:00000002] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 17:07:35,989 [.NET ThreadPool Worker] ERROR Microsoft.EntityFrameworkCore.Query - An exception occurred while iterating over the results of a query for context type 'BookStore.DAL.BookStoreDbContext'.
+Npgsql.PostgresException (0x80004005): 42601: syntax error at end of input
+
+POSITION: 19
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42601
+    MessageText: syntax error at end of input
+    Position: 19
+    File: scan.l
+    Line: 1184
+    Routine: scanner_yyerror
+Npgsql.PostgresException (0x80004005): 42601: syntax error at end of input
+
+POSITION: 19
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42601
+    MessageText: syntax error at end of input
+    Position: 19
+    File: scan.l
+    Line: 1184
+    Routine: scanner_yyerror
+2023-08-07 17:07:35,990 [.NET ThreadPool Worker] ERROR BookStore.DAL.Repositories.AuthorRepository - 0HMSN7OVPM7TL:00000002 - GetAll(IHttpContextAccessor accessor) - ErrorMessage 42601: syntax error at end of input
+
+POSITION: 19
+2023-08-07 17:07:35,990 [.NET ThreadPool Worker] ERROR BookStore.Service.Implementations.AuthorService - 0HMSN7OVPM7TL:00000002 - ListService(IHttpContextAccessor accessor) - ErrorMessage 42601: syntax error at end of input
+
+POSITION: 19
+2023-08-07 17:07:35,990 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN7OVPM7TL:00000002] - Status: 200 - SpentTime: 54ms - Response Body: {"success":false,"message":"42601: syntax error at end of input\r\n\r\nPOSITION: 19","data":null}
+2023-08-07 17:20:12,403 [14] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2023-08-07 17:20:17,717 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 17:20:17,727 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 17:20:17,727 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 17:20:17,727 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 17:20:25,081 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN82KLHOEA:00000001] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "string", "lastname": "string", "age": 0}
+2023-08-07 17:20:25,800 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN82KLHOEA:00000001] - Status: 200 - SpentTime: 717ms - Response Body: {"success":true,"message":"AUTHOR SUCCESSFULLY CREATED","data":{"id":0,"firstname":"string","lastname":"string","age":0}}
+2023-08-07 17:22:02,547 [3] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2023-08-07 17:22:05,155 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 17:22:05,164 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 17:22:05,165 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 17:22:05,165 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 17:22:33,216 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN83KNS2BS:00000001] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "sdstring", "lastname": "string", "age": 0}
+2023-08-07 17:22:33,836 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN83KNS2BS:00000001] - Status: 200 - SpentTime: 619ms - Response Body: {"success":true,"message":"AUTHOR SUCCESSFULLY CREATED","data":{"id":0,"firstname":"sdstring","lastname":"string","age":0}}
+2023-08-07 17:24:50,203 [3] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2023-08-07 17:24:53,155 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 17:24:53,161 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 17:24:53,161 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 17:24:53,161 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 17:24:59,238 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN856PC0BT:00000003] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "string", "lastname": "string", "age": 0}
+2023-08-07 17:24:59,812 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN856PC0BT:00000003] - Status: 200 - SpentTime: 573ms - Response Body: {"success":true,"message":"AUTHOR SUCCESSFULLY CREATED","data":{"id":0,"firstname":"string","lastname":"string","age":0}}
+2023-08-07 17:28:07,913 [9] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2023-08-07 17:28:11,445 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 17:28:11,456 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 17:28:11,457 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 17:28:11,457 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 17:28:16,025 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN871RA8A8:00000003] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "string", "lastname": "string", "age": 0}
+2023-08-07 17:28:16,635 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN871RA8A8:00000003] - Status: 200 - SpentTime: 609ms - Response Body: {"success":true,"message":"AUTHOR SUCCESSFULLY CREATED","data":{"id":0,"firstname":"string","lastname":"string","age":0}}
+2023-08-07 17:29:42,448 [3] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2023-08-07 17:34:30,249 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 17:34:30,255 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 17:34:30,255 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 17:34:30,255 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 17:34:37,352 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN8AIPEPA6:00000001] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "string", "lastname": "string", "age": 0}
+2023-08-07 17:34:38,770 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN8AIPEPA6:00000001] - Status: 200 - SpentTime: 1416ms - Response Body: {"success":true,"message":"AUTHOR SUCCESSFULLY CREATED","data":{"id":0,"firstname":"string","lastname":"string","age":0}}
+2023-08-07 17:35:09,468 [15] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2023-08-07 17:35:22,439 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 17:35:22,448 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 17:35:22,448 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 17:35:22,448 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 17:35:26,411 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN8B2C3BI3:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 17:35:27,720 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN8B2C3BI3:00000001] - Status: 200 - SpentTime: 1308ms - Response Body: {"success":true,"message":"SUCCESS","data":[{"id":1,"firstname":"string","lastname":"string","age":0},{"id":3,"firstname":"string","lastname":"string","age":0},{"id":4,"firstname":"string","lastname":"string","age":0},{"id":5,"firstname":"string","lastname":"string","age":0},{"id":6,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":7,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":8,"firstname":"strfewfweifdskjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjfjpoiwjgfioweiogfhweighewigoewjgoewjgojewogjweogjewjgiewjgoewgoejgjeojgoejng","lastname":"striwefwefewng","age":15},{"id":9,"firstname":"Bekzod","lastname":"Toshpulatov","age":19},{"id":10,"firstname":"Bekzod","lastname":"Toshpulatov","age":19},{"id":11,"firstname":"@p0","lastname":"@p1","age":21},{"id":150,"firstname":"dsadasdas","lastname":"dasdasdsad","age":15},{"id":12,"firstname":"Bekki","lastname":"Too","age":21},{"id":13,"firstname":"Bekki","lastname":"Too","age":21},{"id":14,"firstname":"string","lastname":"string","age":0}]}
+2023-08-07 17:35:45,925 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN8B2C3BI4:00000001] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "dasdasd", "lastname": "strasdasdsading", "age": 25}
+2023-08-07 17:36:00,525 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN8B2C3BI4:00000001] - Status: 200 - SpentTime: 14599ms - Response Body: {"success":true,"message":"AUTHOR SUCCESSFULLY CREATED","data":{"id":0,"firstname":"dasdasd","lastname":"strasdasdsading","age":25}}
+2023-08-07 17:36:11,375 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN8B2C3BI5:00000001] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "dasdasd", "lastname": "strasdasdsading", "age": "aaa"}
+2023-08-07 17:36:11,394 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN8B2C3BI5:00000001] - Status: 400 - SpentTime: 18ms - Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"0HMSN8B2C3BI5:00000001","errors":{"template":["The template field is required."],"$.age":["The JSON value could not be converted to System.Int32. Path: $.age | LineNumber: 3 | BytePositionInLine: 14."]}}
+2023-08-07 17:36:50,523 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN8B2C3BI6:00000001] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "dasdasd", "lastname": "strasdasdsading", "age": -841654}
+2023-08-07 17:36:52,404 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN8B2C3BI6:00000001] - Status: 200 - SpentTime: 1881ms - Response Body: {"success":true,"message":"AUTHOR SUCCESSFULLY CREATED","data":{"id":0,"firstname":"dasdasd","lastname":"strasdasdsading","age":-841654}}
+2023-08-07 17:42:16,129 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 17:42:16,138 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 17:42:16,139 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 17:42:16,139 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 17:42:29,274 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN8ETL9BIL:00000001] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "safsaf", "lastname": "fuckl", "age": 36}
+2023-08-07 17:45:08,421 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 17:45:08,429 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 17:45:08,429 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 17:45:08,430 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 17:45:12,807 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN8GGUKJ8H:00000001] - Schema: http - Method: GET - Host: localhost:5049 - Path: /author/list - QueryString:  - Client IP: ::1 - RequestBody: 
+2023-08-07 17:45:14,104 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN8GGUKJ8H:00000001] - Status: 200 - SpentTime: 1296ms - Response Body: {"success":true,"message":"SUCCESS","data":[{"id":1,"firstname":"string","lastname":"string","age":0},{"id":3,"firstname":"string","lastname":"string","age":0},{"id":4,"firstname":"string","lastname":"string","age":0},{"id":5,"firstname":"string","lastname":"string","age":0},{"id":6,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":7,"firstname":"strfewfweing","lastname":"striwefwefewng","age":15},{"id":8,"firstname":"strfewfweifdskjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjfjpoiwjgfioweiogfhweighewigoewjgoewjgojewogjweogjewjgiewjgoewgoejgjeojgoejng","lastname":"striwefwefewng","age":15},{"id":9,"firstname":"Bekzod","lastname":"Toshpulatov","age":19},{"id":10,"firstname":"Bekzod","lastname":"Toshpulatov","age":19},{"id":11,"firstname":"@p0","lastname":"@p1","age":21},{"id":150,"firstname":"dsadasdas","lastname":"dasdasdsad","age":15},{"id":12,"firstname":"Bekki","lastname":"Too","age":21},{"id":13,"firstname":"Bekki","lastname":"Too","age":21},{"id":14,"firstname":"string","lastname":"string","age":0},{"id":15,"firstname":"dasdasd","lastname":"strasdasdsading","age":25},{"id":16,"firstname":"dasdasd","lastname":"strasdasdsading","age":-841654},{"id":17,"firstname":"safsaf","lastname":"fuckl","age":36},{"id":18,"firstname":"Bekki","lastname":"Too","age":21}]}
+2023-08-07 17:45:27,800 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN8GGUKJ8I:00000001] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "ngfng", "lastname": "ngfngn", "age": 16}
+2023-08-07 17:45:56,501 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN8GGUKJ8I:00000001] - Status: 200 - SpentTime: 28701ms - Response Body: {"success":true,"message":"AUTHOR SUCCESSFULLY CREATED","data":{"id":0,"firstname":"ngfng","lastname":"ngfngn","age":16}}
+2023-08-07 17:49:20,625 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 17:49:20,634 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 17:49:20,634 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 17:49:20,634 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 17:49:26,049 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN8IS6JI03:00000001] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "string", "lastname": "string", "age": 0}
+2023-08-07 17:49:35,233 [.NET ThreadPool Worker] WARN  Microsoft.EntityFrameworkCore.Query - The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2023-08-07 17:49:35,349 [.NET ThreadPool Worker] ERROR Microsoft.EntityFrameworkCore.Query - An exception occurred while iterating over the results of a query for context type 'BookStore.DAL.BookStoreDbContext'.
+System.InvalidOperationException: 'FromSql' or 'SqlQuery' was called with non-composable SQL and with a query composing over it. Consider calling 'AsEnumerable' after the method to perform the composition on the client side.
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.CheckComposableSqlTrimmed(ReadOnlySpan`1 sql)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.CheckComposableSql(String sql)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitFromSql(FromSqlExpression fromSqlExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.<VisitSelect>b__21_1(TableExpressionBase e)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateList[T](IReadOnlyList`1 items, Action`1 generationAction, Action`1 joinAction)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationCommandCacheExtensions.RentAndPopulateRelationalCommand(RelationalCommandCache relationalCommandCache, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: 'FromSql' or 'SqlQuery' was called with non-composable SQL and with a query composing over it. Consider calling 'AsEnumerable' after the method to perform the composition on the client side.
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.CheckComposableSqlTrimmed(ReadOnlySpan`1 sql)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.CheckComposableSql(String sql)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitFromSql(FromSqlExpression fromSqlExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.<VisitSelect>b__21_1(TableExpressionBase e)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateList[T](IReadOnlyList`1 items, Action`1 generationAction, Action`1 joinAction)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationCommandCacheExtensions.RentAndPopulateRelationalCommand(RelationalCommandCache relationalCommandCache, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2023-08-07 17:50:46,817 [.NET ThreadPool Worker] ERROR BookStore.DAL.Repositories.AuthorRepository - 0HMSN8IS6JI03:00000001 - Create(AuthorTemplate template, IHttpContextAccessor accessor) - ErrorMessage 'FromSql' or 'SqlQuery' was called with non-composable SQL and with a query composing over it. Consider calling 'AsEnumerable' after the method to perform the composition on the client side.
+2023-08-07 17:50:46,877 [.NET ThreadPool Worker] ERROR BookStore.Service.Implementations.AuthorService - 0HMSN8IS6JI03:00000001 - CreateService(AuthorTemplate template, IHttpContextAccessor accessor) - ErrorMessage 'FromSql' or 'SqlQuery' was called with non-composable SQL and with a query composing over it. Consider calling 'AsEnumerable' after the method to perform the composition on the client side.
+2023-08-07 17:50:46,883 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - RESPONSE INFO: [TraceId: 0HMSN8IS6JI03:00000001] - Status: 200 - SpentTime: 80833ms - Response Body: {"success":false,"message":"'FromSql' or 'SqlQuery' was called with non-composable SQL and with a query composing over it. Consider calling 'AsEnumerable' after the method to perform the composition on the client side.","data":null}
+2023-08-07 17:51:18,000 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN8IS6JI04:00000001] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "safsafasf", "lastname": "sfafsfsafsafsafsafsafsfs", "age": 0}
+2023-08-07 17:51:23,455 [.NET ThreadPool Worker] ERROR Microsoft.EntityFrameworkCore.Query - An exception occurred while iterating over the results of a query for context type 'BookStore.DAL.BookStoreDbContext'.
+System.InvalidOperationException: 'FromSql' or 'SqlQuery' was called with non-composable SQL and with a query composing over it. Consider calling 'AsEnumerable' after the method to perform the composition on the client side.
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.CheckComposableSqlTrimmed(ReadOnlySpan`1 sql)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.CheckComposableSql(String sql)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitFromSql(FromSqlExpression fromSqlExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.<VisitSelect>b__21_1(TableExpressionBase e)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateList[T](IReadOnlyList`1 items, Action`1 generationAction, Action`1 joinAction)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationCommandCacheExtensions.RentAndPopulateRelationalCommand(RelationalCommandCache relationalCommandCache, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: 'FromSql' or 'SqlQuery' was called with non-composable SQL and with a query composing over it. Consider calling 'AsEnumerable' after the method to perform the composition on the client side.
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.CheckComposableSqlTrimmed(ReadOnlySpan`1 sql)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.CheckComposableSql(String sql)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitFromSql(FromSqlExpression fromSqlExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQuerySqlGenerator.VisitExtension(Expression extensionExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.<VisitSelect>b__21_1(TableExpressionBase e)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateList[T](IReadOnlyList`1 items, Action`1 generationAction, Action`1 joinAction)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQuerySqlGenerator.GenerateRootCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(Expression queryExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommandTemplate(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Internal.RelationCommandCacheExtensions.RentAndPopulateRelationalCommand(RelationalCommandCache relationalCommandCache, RelationalQueryContext queryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2023-08-07 17:56:44,000 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5049
+2023-08-07 17:56:44,008 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-08-07 17:56:44,008 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-08-07 17:56:44,008 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: P:\C#\BookStore\BookStore
+2023-08-07 17:56:49,971 [.NET ThreadPool Worker] INFO  RequestResponseLoggingMiddleware - REQUEST INFO:  [TraceId: 0HMSN8N0B61NI:00000003] - Schema: http - Method: POST - Host: localhost:5049 - Path: /author/create - QueryString:  - Client IP: ::1 - RequestBody: { "firstname": "string", "lastname": "string", "age": 0}

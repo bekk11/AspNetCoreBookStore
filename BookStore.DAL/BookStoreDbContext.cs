@@ -12,6 +12,8 @@ public class BookStoreDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        base.OnModelCreating(modelBuilder);
+        
         modelBuilder.ApplyConfiguration(new AuthorConfiguration());
         modelBuilder.ApplyConfiguration(new GenreConfiguration());
         modelBuilder.ApplyConfiguration(new BookConfiguration());

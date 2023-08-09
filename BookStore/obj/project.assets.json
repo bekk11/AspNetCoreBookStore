@@ -452,7 +452,7 @@
           }
         }
       },
-      "Npgsql/7.0.2": {
+      "Npgsql/7.0.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "6.0.0"
@@ -698,7 +698,9 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "BookStore.Domain": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "7.0.3"
+          "Microsoft.EntityFrameworkCore": "7.0.3",
+          "Npgsql": "7.0.4",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.3"
         },
         "compile": {
           "bin/placeholder/BookStore.DAL.dll": {}
@@ -1592,10 +1594,10 @@
         "packageIcon.png"
       ]
     },
-    "Npgsql/7.0.2": {
-      "sha512": "/k12hfmg4PI0IU2UTLN6n0s/FKUfox8+RdWtzgADYZoyks7GH82WLyXm27eeqatsi/nmiK9lO3HyULlTD87szg==",
+    "Npgsql/7.0.4": {
+      "sha512": "7UVPYy2RP0ci04PED1tc9ZCaTw/DfSdSkLiGEFCAvwMwsgA/bAluj1liNzP1IpN0MFofnOF0cm1zJfmbEuCehg==",
       "type": "package",
-      "path": "npgsql/7.0.2",
+      "path": "npgsql/7.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1612,7 +1614,7 @@
         "lib/netstandard2.0/Npgsql.xml",
         "lib/netstandard2.1/Npgsql.dll",
         "lib/netstandard2.1/Npgsql.xml",
-        "npgsql.7.0.2.nupkg.sha512",
+        "npgsql.7.0.4.nupkg.sha512",
         "npgsql.nuspec",
         "postgresql.png"
       ]
